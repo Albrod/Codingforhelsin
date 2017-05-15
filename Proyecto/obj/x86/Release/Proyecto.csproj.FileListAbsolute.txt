@@ -1,0 +1,4 @@
+C:\Users\Lautta17\documents\visual studio 2010\Projects\Proyecto\Proyecto\obj\x86\Release\Proyecto.Ingreso.resources
+C:\Users\Lautta17\documents\visual studio 2010\Projects\Proyecto\Proyecto\obj\x86\Release\Proyecto.Principal.resources
+C:\Users\Lautta17\documents\visual studio 2010\Projects\Proyecto\Proyecto\obj\x86\Release\Proyecto.Properties.Resources.resources
+C:\Users\Lautta17\documents\visual studio 2010\Projects\Proyecto\Proyecto\obj\x86\Release\Proyecto.csproj.GenerateResource.Cache

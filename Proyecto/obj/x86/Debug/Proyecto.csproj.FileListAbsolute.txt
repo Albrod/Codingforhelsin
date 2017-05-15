@@ -1,0 +1,16 @@
+C:\Users\Lautta17\documents\visual studio 2010\Projects\Proyecto\Proyecto\obj\x86\Debug\Proyecto.Ingreso.resources
+C:\Users\Lautta17\documents\visual studio 2010\Projects\Proyecto\Proyecto\obj\x86\Debug\Proyecto.Principal.resources
+C:\Users\Lautta17\documents\visual studio 2010\Projects\Proyecto\Proyecto\obj\x86\Debug\Proyecto.Properties.Resources.resources
+C:\Users\Lautta17\documents\visual studio 2010\Projects\Proyecto\Proyecto\obj\x86\Debug\Proyecto.csproj.GenerateResource.Cache
+C:\Users\Lautta17\documents\visual studio 2010\Projects\Proyecto\Proyecto\bin\Debug\Proyecto.exe
+C:\Users\Lautta17\documents\visual studio 2010\Projects\Proyecto\Proyecto\bin\Debug\Proyecto.pdb
+C:\Users\Lautta17\documents\visual studio 2010\Projects\Proyecto\Proyecto\obj\x86\Debug\Proyecto.exe
+C:\Users\Lautta17\documents\visual studio 2010\Projects\Proyecto\Proyecto\obj\x86\Debug\Proyecto.pdb
+C:\Users\Lautta17\documents\visual studio 2010\Projects\Proyecto\Proyecto\obj\x86\Debug\Proyecto.csprojResolveAssemblyReference.cache
+C:\Users\Lautta17\documents\visual studio 2010\Projects\Proyecto\Proyecto\obj\x86\Debug\Proyecto.Clientes.resources
+C:\Users\Lautta17\documents\visual studio 2010\Projects\Proyecto\Proyecto\obj\x86\Debug\Proyecto.Proveedores.resources
+C:\Users\Lautta17\documents\visual studio 2010\Projects\Proyecto\Proyecto\obj\x86\Debug\Proyecto.Registros.resources
+C:\Users\Lautta17\documents\visual studio 2010\Projects\Proyecto\Proyecto\obj\x86\Debug\Proyecto.Stock.resources
+C:\Users\Lautta17\documents\visual studio 2010\Projects\Proyecto\Proyecto\obj\x86\Debug\Proyecto.Usuarios.resources
+C:\Users\Lautta17\documents\visual studio 2010\Projects\Proyecto\Proyecto\obj\x86\Debug\Proyecto.Altas.resources
+C:\Users\Lautta17\documents\visual studio 2010\Projects\Proyecto\Proyecto\obj\x86\Debug\Proyecto.BajasModif.resources
