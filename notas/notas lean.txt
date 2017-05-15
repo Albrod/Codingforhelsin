@@ -1,1 +1,3 @@
 esperar que lauta alguna vez lea esto
+0135 15/05
+Terminar los cambios en las tablas (agregar campo descripcion en tablas factura y ficha, ademas un campo de unidades en el articulo y una tabla para el mismo)
