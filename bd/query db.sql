@@ -80,7 +80,6 @@ CREATE TABLE [Personas] (
 [dni] NVARCHAR(40),
 [direccion] NVARCHAR(40),
 [descripcion] NVARCHAR(100) DEFAULT 'Sin Descripcion',
-[estado] NVARCHAR(40) DEFAULT 'Activo'
 );
 GO
 CREATE TABLE [Proveedor] (
@@ -173,4 +172,9 @@ ALTER TABLE [Usuarios] ADD CONSTRAINT [EmpleadosUsuarios] FOREIGN KEY (id_emplea
 /*Triggers*/
 /*Stored procedure*/
 /*Views*/
+CREATE VIEW [Personas_Clientes] AS 
+SELECT Cliente.id_cliente, Personas.id_persona, Personas.nombre, Personas.apellido, Personas.dni, Cliente.cuit, Cliente.[condicion IVA], Personas.direccion, Personas.descripcion, Cliente.estado
+FROM Personas INNER JOIN Cliente ON Personas.id_persona = Cliente.id_persona;
+GO
+select * From [Personas_Clientes]
 /*Funciones*/
