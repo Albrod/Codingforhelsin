@@ -1,3 +1,5 @@
+/*Drop*/
+DROP DATABASE comercio;
 /*DataBase*/
 CREATE DATABASE comercio;
 GO
@@ -9,8 +11,15 @@ CREATE TABLE [Articulos] (
 [id_articulo] INT IDENTITY (1,1) NOT NULL PRIMARY KEY,
 [nombre] NVARCHAR(40),
 [descripcion] NVARCHAR(100) DEFAULT 'Sin Descripcion',
+[id_unidad] INT,
 [id_clase] INT,
 [id_rubro] INT,
+[estado] NVARCHAR(40) DEFAULT 'Activo'
+);
+GO
+CREATE TABLE [Unidades] (
+[id_unidad] INT IDENTITY (1,1) NOT NULL PRIMARY KEY,
+[descripcion] NVARCHAR(100) DEFAULT 'Sin Descripcion',
 [estado] NVARCHAR(40) DEFAULT 'Activo'
 );
 GO
@@ -127,6 +136,7 @@ GO
 ALTER TABLE [Articulos] ADD CONSTRAINT [ArticulosClase] FOREIGN KEY (id_clase) REFERENCES [Clase] (Id_clase) ON UPDATE CASCADE;
 ALTER TABLE [Articulos] ADD CONSTRAINT [ArticulosRubro] FOREIGN KEY (id_rubro) REFERENCES [Rubro] (Id_rubro) ON UPDATE CASCADE;
 ALTER TABLE [Articulos] ADD CONSTRAINT [ArticulosStock] FOREIGN KEY (id_articulo) REFERENCES [Stock] (id_Stock);
+ALTER TABLE [Articulos] ADD CONSTRAINT [ArticulosUnidades] FOREIGN KEY (id_unidad) REFERENCES [Unidades] (id_unidad);
 GO
 /* Foreign keys for Clase-Rubro */
 ALTER TABLE [Clase-Rubro] ADD CONSTRAINT [ClaseClase-Rubro] FOREIGN KEY (id_clase) REFERENCES [Clase] (Id_clase) ON UPDATE CASCADE;
@@ -158,3 +168,9 @@ ALTER TABLE [Telefonos] ADD CONSTRAINT [PersonasTelefonos] FOREIGN KEY (id_perso
 GO
 /* Foreign keys for Usuarios */
 ALTER TABLE [Usuarios] ADD CONSTRAINT [EmpleadosUsuarios] FOREIGN KEY (id_empleado) REFERENCES [Empleados] (id_empleado);
+
+/*Restrains*/
+/*Triggers*/
+/*Stored procedure*/
+/*Views*/
+/*Funciones*/
