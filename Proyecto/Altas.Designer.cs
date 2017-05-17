@@ -601,6 +601,7 @@
             // 
             // tbp_proveedores
             // 
+            this.tbp_proveedores.BackgroundImage = global::Proyecto.Properties.Resources.fondonuevo;
             this.tbp_proveedores.Controls.Add(this.groupBox2);
             this.tbp_proveedores.Controls.Add(this.groupBox1);
             this.tbp_proveedores.Controls.Add(this.gpb_proveedores);

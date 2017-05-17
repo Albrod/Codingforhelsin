@@ -21,7 +21,6 @@ namespace Proyecto
             gpb_clase.BackColor = Color.FromArgb(16, 0, 0, 0);
             gpb_datosgenerales.BackColor = Color.FromArgb(16, 0, 0, 0);
             gpb_datoscliente.BackColor = Color.FromArgb(16, 0, 0, 0);
-            gpb_datosproveedor.BackColor = Color.FromArgb(16, 0, 0, 0);
             gpb_datosempleado.BackColor = Color.FromArgb(16, 0, 0, 0);
         }
 
@@ -31,14 +30,6 @@ namespace Proyecto
                 gpb_datoscliente.Enabled = true;
             else
                 gpb_datoscliente.Enabled = false;
-        }
-
-        private void chb_proveedor_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chb_proveedor.Checked == true)
-                gpb_datosproveedor.Enabled = true;
-            else
-                gpb_datosproveedor.Enabled = false;
         }
 
         private void chb_empleado_CheckedChanged(object sender, EventArgs e)
@@ -64,7 +55,6 @@ namespace Proyecto
             txb_personadni.Clear();
             txb_empleadocuil.Clear();
             txb_empleadocuil.Clear();
-            txb_proveedorcuit.Clear();
             txb_personatelefono1.Clear();
             txb_personatelefono2.Clear();
             txb_personatelefono3.Clear();
@@ -74,7 +64,6 @@ namespace Proyecto
             cmb_clienteiva.SelectedIndex = -1;
             chb_cliente.Checked = false;
             chb_empleado.Checked = false;
-            chb_proveedor.Checked = false;
         }
     }
 }
