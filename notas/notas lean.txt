@@ -2,4 +2,4 @@ esperar que lauta alguna vez lea esto
 0135 15/05
 Terminar los cambios en las tablas (agregar campo descripcion en tablas factura y ficha, ademas un campo de unidades en el articulo y una tabla para el mismo)
 05:14 16/05
-Terminar la clase BD con trys y catchs
+Terminar la clase BD con trys y catch
