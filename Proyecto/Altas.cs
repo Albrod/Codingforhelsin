@@ -56,21 +56,21 @@ namespace Proyecto
 
         private void btn_borrarcampos_Click(object sender, EventArgs e)
         {
-            txb_nombres.Clear();
-            txb_apellidos.Clear();
+            txb_personanombres.Clear();
+            txb_personaapellidos.Clear();
             txb_clientecuit.Clear();
-            txb_descripcion.Clear();
-            txb_direccion.Clear();
-            txb_dni.Clear();
+            txb_personadescripcion.Clear();
+            txb_personadireccion.Clear();
+            txb_personadni.Clear();
             txb_empleadocuil.Clear();
             txb_empleadocuil.Clear();
             txb_proveedorcuit.Clear();
-            txb_telefono1.Clear();
-            txb_telefono2.Clear();
-            txb_telefono3.Clear();
-            txb_descripcion1.Clear();
-            txb_descripcion2.Clear();
-            txb_descripcion3.Clear();
+            txb_personatelefono1.Clear();
+            txb_personatelefono2.Clear();
+            txb_personatelefono3.Clear();
+            txb_personadescripcion1.Clear();
+            txb_personadescripcion2.Clear();
+            txb_personadescripcion3.Clear();
             cmb_clienteiva.SelectedIndex = -1;
             chb_cliente.Checked = false;
             chb_empleado.Checked = false;
