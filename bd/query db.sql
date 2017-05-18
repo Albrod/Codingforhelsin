@@ -60,6 +60,7 @@ CREATE TABLE [Facturacion] (
 [id_articulo] INTEGER,
 [tipo iva] NVARCHAR(40),
 [tipo factura] NVARCHAR(40)
+[descripcion] NVARCHAR(100) DEFAULT 'Sin Descripcion',
 );
 GO
 CREATE TABLE [Ficha de transaccion] (
@@ -71,6 +72,7 @@ CREATE TABLE [Ficha de transaccion] (
 [precio x unidad] INT,
 [total] INT,
 [id_facturacion] INT null,
+[descripcion] NVARCHAR(100) DEFAULT 'Sin Descripcion',
 );
 GO
 CREATE TABLE [Personas] (
