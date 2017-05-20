@@ -22,6 +22,7 @@ namespace Proyecto
             gpb_datosgenerales.BackColor = Color.FromArgb(16, 0, 0, 0);
             gpb_datoscliente.BackColor = Color.FromArgb(16, 0, 0, 0);
             gpb_datosempleado.BackColor = Color.FromArgb(16, 0, 0, 0);
+            gpb_proveedores.BackColor = Color.FromArgb(16, 0, 0, 0);
         }
 
         private void chb_cliente_CheckedChanged(object sender, EventArgs e)
@@ -64,6 +65,20 @@ namespace Proyecto
             cmb_clienteiva.SelectedIndex = -1;
             chb_cliente.Checked = false;
             chb_empleado.Checked = false;
+        }
+
+        private void rdb_proveedornuevo_CheckedChanged(object sender, EventArgs e)
+        {
+            gpb_proveedorpersona.Enabled = true;
+            gpb_proveedordatos.Enabled = true;
+            cmb_proveedordni.Enabled = false;
+        }
+
+        private void rdb_proveedorexistente_CheckedChanged(object sender, EventArgs e)
+        {
+            gpb_proveedorpersona.Enabled = false;
+            cmb_proveedordni.Enabled = true;
+            gpb_proveedordatos.Enabled = true;
         }
     }
 }
