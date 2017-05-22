@@ -74,7 +74,21 @@
             this.chb_empleado = new System.Windows.Forms.CheckBox();
             this.chb_cliente = new System.Windows.Forms.CheckBox();
             this.tbp_proveedores = new System.Windows.Forms.TabPage();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.ltb_articulos = new System.Windows.Forms.ListBox();
+            this.btn_borrarseleccion = new System.Windows.Forms.Button();
+            this.cmb_articulo = new System.Windows.Forms.ComboBox();
+            this.btn_agregaralista = new System.Windows.Forms.Button();
+            this.lbl_articulo = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.gpb_proveedordatos = new System.Windows.Forms.GroupBox();
+            this.cmb_proveedordni = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.txb_cuit = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.gpb_proveedorpersona = new System.Windows.Forms.GroupBox();
@@ -103,22 +117,8 @@
             this.gpb_proveedores = new System.Windows.Forms.GroupBox();
             this.rdb_proveedorexistente = new System.Windows.Forms.RadioButton();
             this.rdb_proveedornuevo = new System.Windows.Forms.RadioButton();
+            this.tbp_articulos = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.lbl_articulo = new System.Windows.Forms.Label();
-            this.cmb_articulo = new System.Windows.Forms.ComboBox();
-            this.btn_agregaralista = new System.Windows.Forms.Button();
-            this.btn_borrarseleccion = new System.Windows.Forms.Button();
-            this.ltb_articulos = new System.Windows.Forms.ListBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cmb_proveedordni = new System.Windows.Forms.ComboBox();
             this.tbc_altas.SuspendLayout();
             this.tbp_personas.SuspendLayout();
             this.gpb_datosempleado.SuspendLayout();
@@ -126,10 +126,10 @@
             this.gpb_datosgenerales.SuspendLayout();
             this.gpb_clase.SuspendLayout();
             this.tbp_proveedores.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.gpb_proveedordatos.SuspendLayout();
             this.gpb_proveedorpersona.SuspendLayout();
             this.gpb_proveedores.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_salir
@@ -150,6 +150,7 @@
             // 
             this.tbc_altas.Controls.Add(this.tbp_personas);
             this.tbc_altas.Controls.Add(this.tbp_proveedores);
+            this.tbc_altas.Controls.Add(this.tbp_articulos);
             this.tbc_altas.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbc_altas.Location = new System.Drawing.Point(8, 8);
             this.tbc_altas.Name = "tbc_altas";
@@ -658,6 +659,144 @@
             this.tbp_proveedores.Text = "Proveedores";
             this.tbp_proveedores.UseVisualStyleBackColor = true;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.ltb_articulos);
+            this.groupBox1.Controls.Add(this.btn_borrarseleccion);
+            this.groupBox1.Controls.Add(this.cmb_articulo);
+            this.groupBox1.Controls.Add(this.btn_agregaralista);
+            this.groupBox1.Controls.Add(this.lbl_articulo);
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(8, 312);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(968, 312);
+            this.groupBox1.TabIndex = 24;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Artículos que comercializa";
+            // 
+            // ltb_articulos
+            // 
+            this.ltb_articulos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ltb_articulos.FormattingEnabled = true;
+            this.ltb_articulos.ItemHeight = 16;
+            this.ltb_articulos.Location = new System.Drawing.Point(8, 32);
+            this.ltb_articulos.Name = "ltb_articulos";
+            this.ltb_articulos.Size = new System.Drawing.Size(396, 260);
+            this.ltb_articulos.TabIndex = 33;
+            // 
+            // btn_borrarseleccion
+            // 
+            this.btn_borrarseleccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_borrarseleccion.Image = global::Proyecto.Properties.Resources.limpiar32;
+            this.btn_borrarseleccion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_borrarseleccion.Location = new System.Drawing.Point(420, 244);
+            this.btn_borrarseleccion.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.btn_borrarseleccion.Name = "btn_borrarseleccion";
+            this.btn_borrarseleccion.Size = new System.Drawing.Size(184, 49);
+            this.btn_borrarseleccion.TabIndex = 31;
+            this.btn_borrarseleccion.Text = "   &Borrar selección";
+            this.btn_borrarseleccion.UseVisualStyleBackColor = true;
+            // 
+            // cmb_articulo
+            // 
+            this.cmb_articulo.FormattingEnabled = true;
+            this.cmb_articulo.Location = new System.Drawing.Point(524, 20);
+            this.cmb_articulo.Name = "cmb_articulo";
+            this.cmb_articulo.Size = new System.Drawing.Size(320, 26);
+            this.cmb_articulo.TabIndex = 30;
+            // 
+            // btn_agregaralista
+            // 
+            this.btn_agregaralista.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_agregaralista.Image = global::Proyecto.Properties.Resources.agregar32;
+            this.btn_agregaralista.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_agregaralista.Location = new System.Drawing.Point(420, 188);
+            this.btn_agregaralista.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.btn_agregaralista.Name = "btn_agregaralista";
+            this.btn_agregaralista.Size = new System.Drawing.Size(184, 49);
+            this.btn_agregaralista.TabIndex = 18;
+            this.btn_agregaralista.Text = "   &Agregar a la lista";
+            this.btn_agregaralista.UseVisualStyleBackColor = true;
+            // 
+            // lbl_articulo
+            // 
+            this.lbl_articulo.AutoSize = true;
+            this.lbl_articulo.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_articulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_articulo.Location = new System.Drawing.Point(420, 24);
+            this.lbl_articulo.Name = "lbl_articulo";
+            this.lbl_articulo.Size = new System.Drawing.Size(68, 17);
+            this.lbl_articulo.TabIndex = 22;
+            this.lbl_articulo.Text = "Artículo:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(420, 64);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(47, 17);
+            this.label9.TabIndex = 23;
+            this.label9.Text = "Dato:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(420, 104);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(47, 17);
+            this.label8.TabIndex = 24;
+            this.label8.Text = "Dato:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(420, 144);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(47, 17);
+            this.label7.TabIndex = 25;
+            this.label7.Text = "Dato:";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(524, 140);
+            this.textBox4.MaxLength = 40;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(320, 23);
+            this.textBox4.TabIndex = 29;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.Location = new System.Drawing.Point(524, 60);
+            this.textBox6.MaxLength = 40;
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(320, 23);
+            this.textBox6.TabIndex = 27;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(524, 100);
+            this.textBox5.MaxLength = 10;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(320, 23);
+            this.textBox5.TabIndex = 28;
+            // 
             // gpb_proveedordatos
             // 
             this.gpb_proveedordatos.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -673,6 +812,25 @@
             this.gpb_proveedordatos.TabIndex = 2;
             this.gpb_proveedordatos.TabStop = false;
             this.gpb_proveedordatos.Text = "Datos de proveedor";
+            // 
+            // cmb_proveedordni
+            // 
+            this.cmb_proveedordni.FormattingEnabled = true;
+            this.cmb_proveedordni.Location = new System.Drawing.Point(64, 28);
+            this.cmb_proveedordni.Name = "cmb_proveedordni";
+            this.cmb_proveedordni.Size = new System.Drawing.Size(184, 26);
+            this.cmb_proveedordni.TabIndex = 24;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(8, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(39, 17);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "DNI:";
             // 
             // txb_cuit
             // 
@@ -990,187 +1148,28 @@
             this.rdb_proveedornuevo.UseVisualStyleBackColor = false;
             this.rdb_proveedornuevo.CheckedChanged += new System.EventHandler(this.rdb_proveedornuevo_CheckedChanged);
             // 
+            // tbp_articulos
+            // 
+            this.tbp_articulos.Location = new System.Drawing.Point(4, 27);
+            this.tbp_articulos.Name = "tbp_articulos";
+            this.tbp_articulos.Padding = new System.Windows.Forms.Padding(3);
+            this.tbp_articulos.Size = new System.Drawing.Size(984, 629);
+            this.tbp_articulos.TabIndex = 2;
+            this.tbp_articulos.Text = "Artículos";
+            this.tbp_articulos.UseVisualStyleBackColor = true;
+            // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::Proyecto.Properties.Resources.alta32;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(412, 672);
+            this.button1.Location = new System.Drawing.Point(784, 244);
             this.button1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(184, 49);
-            this.button1.TabIndex = 17;
+            this.button1.TabIndex = 35;
             this.button1.Text = "&Dar de alta";
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = global::Proyecto.Properties.Resources.limpiar32;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(224, 672);
-            this.button2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(184, 49);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "&Borrar campos";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.groupBox1.Controls.Add(this.ltb_articulos);
-            this.groupBox1.Controls.Add(this.btn_borrarseleccion);
-            this.groupBox1.Controls.Add(this.cmb_articulo);
-            this.groupBox1.Controls.Add(this.btn_agregaralista);
-            this.groupBox1.Controls.Add(this.lbl_articulo);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(8, 312);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(968, 312);
-            this.groupBox1.TabIndex = 24;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Artículos que comercializa";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(524, 140);
-            this.textBox4.MaxLength = 40;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(320, 23);
-            this.textBox4.TabIndex = 29;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(524, 100);
-            this.textBox5.MaxLength = 10;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(320, 23);
-            this.textBox5.TabIndex = 28;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(524, 60);
-            this.textBox6.MaxLength = 40;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(320, 23);
-            this.textBox6.TabIndex = 27;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(420, 144);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(47, 17);
-            this.label7.TabIndex = 25;
-            this.label7.Text = "Dato:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(420, 104);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(47, 17);
-            this.label8.TabIndex = 24;
-            this.label8.Text = "Dato:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(420, 64);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(47, 17);
-            this.label9.TabIndex = 23;
-            this.label9.Text = "Dato:";
-            // 
-            // lbl_articulo
-            // 
-            this.lbl_articulo.AutoSize = true;
-            this.lbl_articulo.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_articulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_articulo.Location = new System.Drawing.Point(420, 24);
-            this.lbl_articulo.Name = "lbl_articulo";
-            this.lbl_articulo.Size = new System.Drawing.Size(68, 17);
-            this.lbl_articulo.TabIndex = 22;
-            this.lbl_articulo.Text = "Artículo:";
-            // 
-            // cmb_articulo
-            // 
-            this.cmb_articulo.FormattingEnabled = true;
-            this.cmb_articulo.Location = new System.Drawing.Point(524, 20);
-            this.cmb_articulo.Name = "cmb_articulo";
-            this.cmb_articulo.Size = new System.Drawing.Size(320, 26);
-            this.cmb_articulo.TabIndex = 30;
-            // 
-            // btn_agregaralista
-            // 
-            this.btn_agregaralista.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_agregaralista.Image = global::Proyecto.Properties.Resources.agregar32;
-            this.btn_agregaralista.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_agregaralista.Location = new System.Drawing.Point(420, 188);
-            this.btn_agregaralista.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.btn_agregaralista.Name = "btn_agregaralista";
-            this.btn_agregaralista.Size = new System.Drawing.Size(184, 49);
-            this.btn_agregaralista.TabIndex = 18;
-            this.btn_agregaralista.Text = "   &Agregar a la lista";
-            this.btn_agregaralista.UseVisualStyleBackColor = true;
-            // 
-            // btn_borrarseleccion
-            // 
-            this.btn_borrarseleccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_borrarseleccion.Image = global::Proyecto.Properties.Resources.limpiar32;
-            this.btn_borrarseleccion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_borrarseleccion.Location = new System.Drawing.Point(420, 244);
-            this.btn_borrarseleccion.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.btn_borrarseleccion.Name = "btn_borrarseleccion";
-            this.btn_borrarseleccion.Size = new System.Drawing.Size(184, 49);
-            this.btn_borrarseleccion.TabIndex = 31;
-            this.btn_borrarseleccion.Text = "   &Borrar selección";
-            this.btn_borrarseleccion.UseVisualStyleBackColor = true;
-            // 
-            // ltb_articulos
-            // 
-            this.ltb_articulos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ltb_articulos.FormattingEnabled = true;
-            this.ltb_articulos.ItemHeight = 16;
-            this.ltb_articulos.Location = new System.Drawing.Point(8, 32);
-            this.ltb_articulos.Name = "ltb_articulos";
-            this.ltb_articulos.Size = new System.Drawing.Size(396, 260);
-            this.ltb_articulos.TabIndex = 33;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(8, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 17);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "DNI:";
-            // 
-            // cmb_proveedordni
-            // 
-            this.cmb_proveedordni.FormattingEnabled = true;
-            this.cmb_proveedordni.Location = new System.Drawing.Point(64, 28);
-            this.cmb_proveedordni.Name = "cmb_proveedordni";
-            this.cmb_proveedordni.Size = new System.Drawing.Size(184, 26);
-            this.cmb_proveedordni.TabIndex = 24;
             // 
             // Altas
             // 
@@ -1178,9 +1177,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Proyecto.Properties.Resources.fondonuevo;
             this.ClientSize = new System.Drawing.Size(1008, 729);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.tbc_altas);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.btn_salir);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Altas";
@@ -1198,14 +1195,14 @@
             this.gpb_clase.ResumeLayout(false);
             this.gpb_clase.PerformLayout();
             this.tbp_proveedores.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.gpb_proveedordatos.ResumeLayout(false);
             this.gpb_proveedordatos.PerformLayout();
             this.gpb_proveedorpersona.ResumeLayout(false);
             this.gpb_proveedorpersona.PerformLayout();
             this.gpb_proveedores.ResumeLayout(false);
             this.gpb_proveedores.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1298,9 +1295,9 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ComboBox cmb_proveedordni;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TabPage tbp_articulos;
+        private System.Windows.Forms.Button button1;
     }
 }

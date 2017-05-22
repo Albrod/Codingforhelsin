@@ -43,6 +43,8 @@
             this.txb_dni = new System.Windows.Forms.TextBox();
             this.txb_nombre = new System.Windows.Forms.TextBox();
             this.dgv_usuarios = new System.Windows.Forms.DataGridView();
+            this.btn_buscar = new System.Windows.Forms.Button();
+            this.btn_borrarcampos = new System.Windows.Forms.Button();
             this.gpb_filtrar.SuspendLayout();
             this.gpb_buscar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_usuarios)).BeginInit();
@@ -198,12 +200,40 @@
             this.dgv_usuarios.Size = new System.Drawing.Size(992, 488);
             this.dgv_usuarios.TabIndex = 17;
             // 
+            // btn_buscar
+            // 
+            this.btn_buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_buscar.Image = global::Proyecto.Properties.Resources.buscar32;
+            this.btn_buscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_buscar.Location = new System.Drawing.Point(608, 32);
+            this.btn_buscar.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.btn_buscar.Name = "btn_buscar";
+            this.btn_buscar.Size = new System.Drawing.Size(184, 49);
+            this.btn_buscar.TabIndex = 21;
+            this.btn_buscar.Text = "&Buscar";
+            this.btn_buscar.UseVisualStyleBackColor = true;
+            // 
+            // btn_borrarcampos
+            // 
+            this.btn_borrarcampos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_borrarcampos.Image = global::Proyecto.Properties.Resources.limpiar32;
+            this.btn_borrarcampos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_borrarcampos.Location = new System.Drawing.Point(608, 104);
+            this.btn_borrarcampos.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.btn_borrarcampos.Name = "btn_borrarcampos";
+            this.btn_borrarcampos.Size = new System.Drawing.Size(184, 49);
+            this.btn_borrarcampos.TabIndex = 20;
+            this.btn_borrarcampos.Text = "Borrar &campos";
+            this.btn_borrarcampos.UseVisualStyleBackColor = true;
+            // 
             // Stock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Proyecto.Properties.Resources.fondonuevo;
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Controls.Add(this.btn_buscar);
+            this.Controls.Add(this.btn_borrarcampos);
             this.Controls.Add(this.gpb_filtrar);
             this.Controls.Add(this.gpb_buscar);
             this.Controls.Add(this.dgv_usuarios);
@@ -238,5 +268,7 @@
         private System.Windows.Forms.TextBox txb_dni;
         private System.Windows.Forms.TextBox txb_nombre;
         private System.Windows.Forms.DataGridView dgv_usuarios;
+        private System.Windows.Forms.Button btn_buscar;
+        private System.Windows.Forms.Button btn_borrarcampos;
     }
 }
