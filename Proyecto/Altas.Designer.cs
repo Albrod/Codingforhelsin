@@ -75,6 +75,7 @@
             this.chb_cliente = new System.Windows.Forms.CheckBox();
             this.tbp_proveedores = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.ltb_articulos = new System.Windows.Forms.ListBox();
             this.btn_borrarseleccion = new System.Windows.Forms.Button();
             this.cmb_articulo = new System.Windows.Forms.ComboBox();
@@ -118,7 +119,11 @@
             this.rdb_proveedorexistente = new System.Windows.Forms.RadioButton();
             this.rdb_proveedornuevo = new System.Windows.Forms.RadioButton();
             this.tbp_articulos = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.tbc_altas.SuspendLayout();
             this.tbp_personas.SuspendLayout();
             this.gpb_datosempleado.SuspendLayout();
@@ -130,6 +135,7 @@
             this.gpb_proveedordatos.SuspendLayout();
             this.gpb_proveedorpersona.SuspendLayout();
             this.gpb_proveedores.SuspendLayout();
+            this.tbp_articulos.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_salir
@@ -682,6 +688,19 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Artículos que comercializa";
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = global::Proyecto.Properties.Resources.alta32;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(784, 244);
+            this.button1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(184, 49);
+            this.button1.TabIndex = 35;
+            this.button1.Text = "&Dar de alta";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // ltb_articulos
             // 
             this.ltb_articulos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1150,6 +1169,11 @@
             // 
             // tbp_articulos
             // 
+            this.tbp_articulos.Controls.Add(this.label14);
+            this.tbp_articulos.Controls.Add(this.label11);
+            this.tbp_articulos.Controls.Add(this.label10);
+            this.tbp_articulos.Controls.Add(this.label6);
+            this.tbp_articulos.Controls.Add(this.label4);
             this.tbp_articulos.Location = new System.Drawing.Point(4, 27);
             this.tbp_articulos.Name = "tbp_articulos";
             this.tbp_articulos.Padding = new System.Windows.Forms.Padding(3);
@@ -1158,25 +1182,57 @@
             this.tbp_articulos.Text = "Artículos";
             this.tbp_articulos.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // label4
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = global::Proyecto.Properties.Resources.alta32;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(784, 244);
-            this.button1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(184, 49);
-            this.button1.TabIndex = 35;
-            this.button1.Text = "&Dar de alta";
-            this.button1.UseVisualStyleBackColor = true;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(278, 72);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(100, 18);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Stock minimo";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(278, 100);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(114, 18);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Nombre articulo";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(278, 127);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(158, 18);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "Proveedor relacionado";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(278, 154);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(170, 18);
+            this.label11.TabIndex = 3;
+            this.label11.Text = "Porcentaje de ganancia?";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(278, 182);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(84, 18);
+            this.label14.TabIndex = 4;
+            this.label14.Text = "Tipo unidad";
             // 
             // Altas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Proyecto.Properties.Resources.fondonuevo;
-            this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.ClientSize = new System.Drawing.Size(1008, 582);
             this.Controls.Add(this.tbc_altas);
             this.Controls.Add(this.btn_salir);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -1203,6 +1259,8 @@
             this.gpb_proveedorpersona.PerformLayout();
             this.gpb_proveedores.ResumeLayout(false);
             this.gpb_proveedores.PerformLayout();
+            this.tbp_articulos.ResumeLayout(false);
+            this.tbp_articulos.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1299,5 +1357,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage tbp_articulos;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label4;
     }
 }
