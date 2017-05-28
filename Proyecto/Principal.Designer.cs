@@ -116,15 +116,23 @@
             this.tbp_compras.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.tbp_compras.Name = "tbp_compras";
             this.tbp_compras.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.tbp_compras.Size = new System.Drawing.Size(609, 537);
+            this.tbp_compras.Size = new System.Drawing.Size(772, 561);
             this.tbp_compras.TabIndex = 1;
             this.tbp_compras.Text = "Compras";
             this.tbp_compras.UseVisualStyleBackColor = true;
             // 
             // comboBox3
             // 
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "Gramos",
+            "Kilos",
+            "Litros",
+            "C.C.",
+            "Unidad",
+            "Otros"});
             this.comboBox3.Location = new System.Drawing.Point(252, 96);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(116, 24);
@@ -164,8 +172,16 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Gramos",
+            "Kilos",
+            "Litros",
+            "C.C.",
+            "Unidad",
+            "Otros"});
             this.comboBox2.Location = new System.Drawing.Point(252, 56);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(116, 24);

@@ -10,4 +10,7 @@
     <FallbackCulture>en-US</FallbackCulture>
     <VerifyUploadedFiles>false</VerifyUploadedFiles>
   </PropertyGroup>
+  <PropertyGroup>
+    <ReferencePath>B:\Instituto\3°\gelsi\Codingforhelsin\itextsharp 4.1.6 lgpl\</ReferencePath>
+  </PropertyGroup>
 </Project>

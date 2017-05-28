@@ -11,14 +11,15 @@ namespace Proyecto
 {
     public partial class Principal : Form
     {
+        instancias_form instancias = new instancias_form();
+
         public Principal()
         {
             InitializeComponent();
         }
-
         private void Principal_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btn_salir_Click(object sender, EventArgs e)
@@ -28,51 +29,37 @@ namespace Proyecto
 
         private void btn_stock_Click(object sender, EventArgs e)
         {
-            Stock stock = new Stock();
-            stock.Tag = this;
-            stock.Show();
+            instancias.stock_crear_mostrar();
         }
 
         private void btn_proveedores_Click(object sender, EventArgs e)
         {
-            Proveedores proveedores = new Proveedores();
-            proveedores.Tag = this;
-            proveedores.Show();
+            instancias.proveedores_crear_mostrar();
         }
 
         private void btn_registros_Click(object sender, EventArgs e)
         {
-            Registros registros = new Registros();
-            registros.Tag = this;
-            registros.Show();
+            instancias.registros_crear_mostrar();  
         }
 
         private void btn_clientes_Click(object sender, EventArgs e)
         {
-            Clientes clientes = new Clientes();
-            clientes.Tag = this;
-            clientes.Show();
+            instancias.clientes_crear_mostrar();
         }
 
         private void btn_usuarios_Click(object sender, EventArgs e)
         {
-            Usuarios usuarios = new Usuarios();
-            usuarios.Tag = this;
-            usuarios.Show();
+            instancias.usuarios_crear_mostrar();
         }
 
         private void btn_altas_Click(object sender, EventArgs e)
         {
-            Altas altas = new Altas();
-            altas.Tag = this;
-            altas.Show();
+            instancias.altas_crear_mostrar();            
         }
 
         private void btn_bajasmodif_Click(object sender, EventArgs e)
         {
-            BajasModif bajasmodif = new BajasModif();
-            bajasmodif.Tag = this;
-            bajasmodif.Show();
+            instancias.bajasmodif_crear_mostrar();
         }
 
     }

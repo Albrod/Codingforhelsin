@@ -23,7 +23,6 @@ namespace Proyecto
             gpb_datoscliente.BackColor = Color.FromArgb(16, 0, 0, 0);
             gpb_datosempleado.BackColor = Color.FromArgb(16, 0, 0, 0);
             gpb_proveedores.BackColor = Color.FromArgb(16, 0, 0, 0);
-        }
 
         private void chb_cliente_CheckedChanged(object sender, EventArgs e)
         {
@@ -79,6 +78,15 @@ namespace Proyecto
             gpb_proveedorpersona.Enabled = false;
             cmb_proveedordni.Enabled = true;
             gpb_proveedordatos.Enabled = true;
+        }
+
+        private void Altas_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                this.Hide();
+                e.Cancel = true;
+            }
         }
     }
 }

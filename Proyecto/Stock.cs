@@ -21,9 +21,13 @@ namespace Proyecto
             Close();
         }
 
-        private void Stock_Load(object sender, EventArgs e)
+        private void Stock_FormClosing(object sender, FormClosingEventArgs e)
         {
-
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                this.Hide();
+                e.Cancel = true;
+            }
         }
     }
 }

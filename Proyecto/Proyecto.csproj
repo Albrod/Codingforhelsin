@@ -68,13 +68,15 @@
     <Compile Include="BajasModif.Designer.cs">
       <DependentUpon>BajasModif.cs</DependentUpon>
     </Compile>
+    <Compile Include="Clases\Articulos.cs" />
+    <Compile Include="Clases\instancias_form.cs" />
     <Compile Include="Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Clientes.Designer.cs">
       <DependentUpon>Clientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="DataBase.cs" />
+    <Compile Include="Clases\DataBase.cs" />
     <Compile Include="Ingreso.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +120,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="itextsharp, Version=4.1.6.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\itextsharp 4.1.6 lgpl\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />

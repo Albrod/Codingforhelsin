@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Clientes));
             this.btn_salir = new System.Windows.Forms.Button();
             this.gpb_buscar = new System.Windows.Forms.GroupBox();
+            this.cmb_dni = new System.Windows.Forms.ComboBox();
+            this.cmb_nombre = new System.Windows.Forms.ComboBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.chb_telefono = new System.Windows.Forms.CheckBox();
             this.chb_dni = new System.Windows.Forms.CheckBox();
@@ -44,8 +46,6 @@
             this.lbl_iva = new System.Windows.Forms.Label();
             this.btn_buscar = new System.Windows.Forms.Button();
             this.btn_borrarcampos = new System.Windows.Forms.Button();
-            this.cmb_nombre = new System.Windows.Forms.ComboBox();
-            this.cmb_dni = new System.Windows.Forms.ComboBox();
             this.gpb_buscar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_usuarios)).BeginInit();
             this.gpb_filtrar.SuspendLayout();
@@ -82,6 +82,24 @@
             this.gpb_buscar.TabIndex = 15;
             this.gpb_buscar.TabStop = false;
             this.gpb_buscar.Text = "Buscar cliente por:";
+            // 
+            // cmb_dni
+            // 
+            this.cmb_dni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_dni.FormattingEnabled = true;
+            this.cmb_dni.Location = new System.Drawing.Point(136, 64);
+            this.cmb_dni.Name = "cmb_dni";
+            this.cmb_dni.Size = new System.Drawing.Size(148, 24);
+            this.cmb_dni.TabIndex = 14;
+            // 
+            // cmb_nombre
+            // 
+            this.cmb_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_nombre.FormattingEnabled = true;
+            this.cmb_nombre.Location = new System.Drawing.Point(136, 28);
+            this.cmb_nombre.Name = "cmb_nombre";
+            this.cmb_nombre.Size = new System.Drawing.Size(148, 24);
+            this.cmb_nombre.TabIndex = 13;
             // 
             // checkBox4
             // 
@@ -221,24 +239,6 @@
             this.btn_borrarcampos.Text = "Borrar &campos";
             this.btn_borrarcampos.UseVisualStyleBackColor = true;
             // 
-            // cmb_nombre
-            // 
-            this.cmb_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_nombre.FormattingEnabled = true;
-            this.cmb_nombre.Location = new System.Drawing.Point(136, 28);
-            this.cmb_nombre.Name = "cmb_nombre";
-            this.cmb_nombre.Size = new System.Drawing.Size(148, 24);
-            this.cmb_nombre.TabIndex = 13;
-            // 
-            // cmb_dni
-            // 
-            this.cmb_dni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_dni.FormattingEnabled = true;
-            this.cmb_dni.Location = new System.Drawing.Point(136, 64);
-            this.cmb_dni.Name = "cmb_dni";
-            this.cmb_dni.Size = new System.Drawing.Size(148, 24);
-            this.cmb_dni.TabIndex = 14;
-            // 
             // Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -255,6 +255,7 @@
             this.Name = "Clientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clientes";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Clientes_FormClosing);
             this.gpb_buscar.ResumeLayout(false);
             this.gpb_buscar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_usuarios)).EndInit();

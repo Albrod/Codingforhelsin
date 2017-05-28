@@ -2,31 +2,31 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Data.OleDb;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 using System.Data;
 
-namespace Matarife
+namespace Proyecto
 {
-    class DataBase
+    public static class DataBase
     {
         //Declara variables y setea la conexion con la base de datos
-        static string strConexion = @"Provider=Microsoft.JET.OLEDB.4.0;" +
-                "Data Source=database.mdb";
-        public OleDbConnection ConexionDB = new OleDbConnection(strConexion);
-        public OleDbCommand Orden;
-        public OleDbDataReader Lector;
+        static string strConexion = "Data Source=PAIN\\GDBD;" + "Initial Catalog=Comercio;" +
+            "User id=usuario;" + "Password=malo;";
+        static SqlConnection ConexionDB = new SqlConnection(strConexion);
+        static SqlCommand Orden;
+        static SqlDataReader Lector;
 
 
         //Cargar esto en el load de la clase
         //textBox.AutoCompleteCustomSource = database.Autocomplete("select * from Articulos", (Convert.ToString(cmb)));
         //textBox.AutoCompleteMode = AutoCompleteMode.Suggest;
         //textBox.AutoCompleteSource = AutoCompleteSource.CustomSource;
-        public AutoCompleteStringCollection Autocomplete(string OleDb, string campo)
+        public static AutoCompleteStringCollection Autocomplete(string OleDb, string campo)
         {
             DataTable dt = new DataTable();
-            Orden = new OleDbCommand(OleDb, ConexionDB);
-            OleDbDataAdapter adap = new OleDbDataAdapter(Orden);
+            Orden = new SqlCommand(OleDb, ConexionDB);
+            SqlDataAdapter adap = new SqlDataAdapter(Orden);
             adap.Fill(dt);
             AutoCompleteStringCollection coleccion = new AutoCompleteStringCollection();
             //recorrer y cargar los items para el autocompletado
@@ -38,12 +38,12 @@ namespace Matarife
         }
 
         //Metodo para ejecutar consultas (EJ: insert, update, delete)
-        public void Ejecutar(string OleDb)
+        public static void Ejecutar(string OleDb)
         {
             try
             {
                 ConexionDB.Open();
-                Orden = new OleDbCommand(OleDb, ConexionDB);
+                Orden = new SqlCommand(OleDb, ConexionDB);
                 Orden.ExecuteNonQuery();
                 ConexionDB.Close();
             }
@@ -56,12 +56,12 @@ namespace Matarife
         }
 
         //Carga del data grid view (EJ: select * from tabla)
-        public void CargaDGV(DataGridView dgv, string OleDb)
+        public static void CargaDGV(DataGridView dgv, string OleDb)
         {
             try
             {
                 ConexionDB.Open();
-                Orden = new OleDbCommand(OleDb, ConexionDB);
+                Orden = new SqlCommand(OleDb, ConexionDB);
                 Lector = Orden.ExecuteReader();
                 DataTable dt = new DataTable();
                 dt.Load(Lector);
@@ -76,12 +76,12 @@ namespace Matarife
             }
         }
         //Carga del combo box (EJ: select * from tabla, campo)
-        public void CargarCB(ComboBox cb, string OleDb, string campo)
+        public static void CargarCB(ComboBox cb, string OleDb, string campo)
         {
             try
             {
                 ConexionDB.Open();
-                Orden = new OleDbCommand(OleDb, ConexionDB);
+                Orden = new SqlCommand(OleDb, ConexionDB);
                 Lector = Orden.ExecuteReader();
                 while (Lector.Read())
                 {
@@ -101,12 +101,12 @@ namespace Matarife
             }
         }
         //Carga del list box (EJ: select * from tabla, campo)
-        public void CargarLB(ListBox lb, string OleDb, string campo)
+        public static void CargarLB(ListBox lb, string OleDb, string campo)
         {
             try
             {
                 ConexionDB.Open();
-                Orden = new OleDbCommand(OleDb, ConexionDB);
+                Orden = new SqlCommand(OleDb, ConexionDB);
                 Lector = Orden.ExecuteReader();
                 while (Lector.Read())
                 {
@@ -127,13 +127,13 @@ namespace Matarife
 
         }
         //Devuelve un valor unico de una consulta (EJ: select * from tabla where x=z,campo)
-        public string LeerDato(string campo, string OleDb)
+        public static string LeerDato(string campo, string OleDb)
         {
             string dato;
             try
             {
                 ConexionDB.Open();
-                Orden = new OleDbCommand(OleDb, ConexionDB);
+                Orden = new SqlCommand(OleDb, ConexionDB);
                 Lector = Orden.ExecuteReader();
                 Lector.Read();
                 dato = Lector[campo].ToString();

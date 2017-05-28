@@ -242,7 +242,7 @@
             this.Name = "Stock";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Stock";
-            this.Load += new System.EventHandler(this.Stock_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Stock_FormClosing);
             this.gpb_filtrar.ResumeLayout(false);
             this.gpb_filtrar.PerformLayout();
             this.gpb_buscar.ResumeLayout(false);
