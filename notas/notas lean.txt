@@ -2,4 +2,12 @@
 0135 15/05
 (ECHO)Terminar los cambios en las tablas (agregar campo descripcion en tablas factura y ficha, ademas un campo de unidades en el articulo y una tabla para el mismo)
 05:14 16/05
-Terminar la clase BD con trys y catch
+(ECHO)Terminar la clase BD con trys y catch
+03:58 28/05
+Explicar a lauta lo del usuario de la bd.
+Terminar de agregar este codigo a todos los forms en el evento closing
+if (e.CloseReason == CloseReason.UserClosing)
+            {
+                this.Hide();
+                e.Cancel = true;
+            }
