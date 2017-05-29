@@ -127,7 +127,7 @@
   <data name="clientes32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imgicon\clientes32.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fondonuevo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="fondonuevo1920x1080" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imgicon\fondonuevo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="stock32" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -162,5 +162,17 @@
   </data>
   <data name="guardar32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imgicon\guardar32.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondonuevo1024x576" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imgicon\fondonuevo1024x576.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondonuevo1024x768" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imgicon\fondonuevo1024x768.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondonuevo960x540" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imgicon\fondonuevo960x540.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondo_no_escalado_1024x768" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imgicon\fondo no escalado 1024x768.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

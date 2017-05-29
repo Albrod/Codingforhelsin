@@ -449,7 +449,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Proyecto.Properties.Resources.fondonuevo;
+            this.BackgroundImage = global::Proyecto.Properties.Resources.fondonuevo1920x1080;
             this.ClientSize = new System.Drawing.Size(1008, 729);
             this.Controls.Add(this.spc_principal);
             this.Controls.Add(this.btn_salir);

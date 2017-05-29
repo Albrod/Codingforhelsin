@@ -172,7 +172,7 @@
             // 
             // tbp_personas
             // 
-            this.tbp_personas.BackgroundImage = global::Proyecto.Properties.Resources.fondonuevo;
+            this.tbp_personas.BackgroundImage = global::Proyecto.Properties.Resources.fondonuevo1920x1080;
             this.tbp_personas.Controls.Add(this.btn_personamodificar);
             this.tbp_personas.Controls.Add(this.btn_personaeliminar);
             this.tbp_personas.Controls.Add(this.btn_borrarcampos);
@@ -664,7 +664,7 @@
             // 
             // tbp_proveedores
             // 
-            this.tbp_proveedores.BackgroundImage = global::Proyecto.Properties.Resources.fondonuevo;
+            this.tbp_proveedores.BackgroundImage = global::Proyecto.Properties.Resources.fondonuevo1920x1080;
             this.tbp_proveedores.Controls.Add(this.gpb_modificarproveedor);
             this.tbp_proveedores.Controls.Add(this.groupBox1);
             this.tbp_proveedores.Controls.Add(this.gpb_proveedordatos);
@@ -1188,7 +1188,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Proyecto.Properties.Resources.fondonuevo;
+            this.BackgroundImage = global::Proyecto.Properties.Resources.fondonuevo1920x1080;
             this.ClientSize = new System.Drawing.Size(1008, 729);
             this.Controls.Add(this.tbc_altas);
             this.Controls.Add(this.btn_salir);

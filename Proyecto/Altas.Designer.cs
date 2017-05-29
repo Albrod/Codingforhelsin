@@ -145,7 +145,6 @@
             this.btn_salir.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)));
             this.btn_salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_salir.Image = global::Proyecto.Properties.Resources.salir32;
             this.btn_salir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_salir.Location = new System.Drawing.Point(8, 682);
             this.btn_salir.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
@@ -173,7 +172,7 @@
             // tbp_personas
             // 
             this.tbp_personas.AutoScroll = true;
-            this.tbp_personas.BackgroundImage = global::Proyecto.Properties.Resources.fondonuevo;
+            this.tbp_personas.BackgroundImage = global::Proyecto.Properties.Resources.fondo_no_escalado_1024x768;
             this.tbp_personas.Controls.Add(this.btn_daralta);
             this.tbp_personas.Controls.Add(this.btn_borrarcampos);
             this.tbp_personas.Controls.Add(this.gpb_datosempleado);
@@ -190,7 +189,6 @@
             // btn_daralta
             // 
             this.btn_daralta.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_daralta.Image = global::Proyecto.Properties.Resources.alta32;
             this.btn_daralta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_daralta.Location = new System.Drawing.Point(48, 196);
             this.btn_daralta.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
@@ -203,7 +201,6 @@
             // btn_borrarcampos
             // 
             this.btn_borrarcampos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_borrarcampos.Image = global::Proyecto.Properties.Resources.limpiar32;
             this.btn_borrarcampos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_borrarcampos.Location = new System.Drawing.Point(48, 260);
             this.btn_borrarcampos.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
@@ -663,7 +660,7 @@
             // 
             // tbp_proveedores
             // 
-            this.tbp_proveedores.BackgroundImage = global::Proyecto.Properties.Resources.fondonuevo;
+            this.tbp_proveedores.BackgroundImage = global::Proyecto.Properties.Resources.fondo_no_escalado_1024x768;
             this.tbp_proveedores.Controls.Add(this.groupBox1);
             this.tbp_proveedores.Controls.Add(this.gpb_proveedordatos);
             this.tbp_proveedores.Controls.Add(this.gpb_proveedorpersona);
@@ -702,7 +699,6 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = global::Proyecto.Properties.Resources.alta32;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(784, 244);
             this.button1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
@@ -725,7 +721,6 @@
             // btn_borrarseleccion
             // 
             this.btn_borrarseleccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_borrarseleccion.Image = global::Proyecto.Properties.Resources.limpiar32;
             this.btn_borrarseleccion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_borrarseleccion.Location = new System.Drawing.Point(420, 244);
             this.btn_borrarseleccion.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
@@ -746,7 +741,6 @@
             // btn_agregaralista
             // 
             this.btn_agregaralista.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_agregaralista.Image = global::Proyecto.Properties.Resources.agregar32;
             this.btn_agregaralista.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_agregaralista.Location = new System.Drawing.Point(420, 188);
             this.btn_agregaralista.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
@@ -1183,6 +1177,8 @@
             // 
             // tbp_articulos
             // 
+            this.tbp_articulos.BackColor = System.Drawing.Color.Transparent;
+            this.tbp_articulos.BackgroundImage = global::Proyecto.Properties.Resources.fondo_no_escalado_1024x768;
             this.tbp_articulos.Controls.Add(this.label14);
             this.tbp_articulos.Controls.Add(this.label11);
             this.tbp_articulos.Controls.Add(this.label10);
@@ -1194,7 +1190,6 @@
             this.tbp_articulos.Size = new System.Drawing.Size(998, 643);
             this.tbp_articulos.TabIndex = 2;
             this.tbp_articulos.Text = "Artículos";
-            this.tbp_articulos.UseVisualStyleBackColor = true;
             // 
             // label14
             // 
@@ -1260,7 +1255,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.BackgroundImage = global::Proyecto.Properties.Resources.fondonuevo;
             this.ClientSize = new System.Drawing.Size(1008, 741);
             this.Controls.Add(this.gb_altas);
             this.DoubleBuffered = true;
