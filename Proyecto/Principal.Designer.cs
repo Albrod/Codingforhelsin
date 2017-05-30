@@ -32,18 +32,23 @@
             this.tbc_principal = new System.Windows.Forms.TabControl();
             this.tbp_ventas = new System.Windows.Forms.TabPage();
             this.tbp_compras = new System.Windows.Forms.TabPage();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.bt_compras_daralta = new System.Windows.Forms.Button();
+            this.tb__compras_descompra = new System.Windows.Forms.TextBox();
+            this.tb_compras_fechacompra = new System.Windows.Forms.TextBox();
+            this.tb_compras_pt = new System.Windows.Forms.TextBox();
+            this.tb_compras_pxu = new System.Windows.Forms.TextBox();
+            this.cb_compras_unidad = new System.Windows.Forms.ComboBox();
+            this.tb_compras_cantcomprada = new System.Windows.Forms.TextBox();
             this.btn_altastock = new System.Windows.Forms.Button();
-            this.btn_borrar = new System.Windows.Forms.Button();
-            this.btn_agregar = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.bt_compras_borrarlista = new System.Windows.Forms.Button();
+            this.bt_compras_agregar = new System.Windows.Forms.Button();
+            this.dgv_compras_listacompra = new System.Windows.Forms.DataGridView();
+            this.Articulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Unidades = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Preciounitario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descripción = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cb_compras_art = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -61,7 +66,7 @@
             this.spc_principal = new System.Windows.Forms.SplitContainer();
             this.tbc_principal.SuspendLayout();
             this.tbp_compras.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_compras_listacompra)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spc_principal)).BeginInit();
             this.spc_principal.Panel1.SuspendLayout();
             this.spc_principal.Panel2.SuspendLayout();
@@ -93,18 +98,18 @@
             // 
             // tbp_compras
             // 
-            this.tbp_compras.Controls.Add(this.comboBox3);
-            this.tbp_compras.Controls.Add(this.textBox5);
-            this.tbp_compras.Controls.Add(this.textBox4);
-            this.tbp_compras.Controls.Add(this.textBox3);
-            this.tbp_compras.Controls.Add(this.textBox2);
-            this.tbp_compras.Controls.Add(this.comboBox2);
-            this.tbp_compras.Controls.Add(this.textBox1);
+            this.tbp_compras.Controls.Add(this.bt_compras_daralta);
+            this.tbp_compras.Controls.Add(this.tb__compras_descompra);
+            this.tbp_compras.Controls.Add(this.tb_compras_fechacompra);
+            this.tbp_compras.Controls.Add(this.tb_compras_pt);
+            this.tbp_compras.Controls.Add(this.tb_compras_pxu);
+            this.tbp_compras.Controls.Add(this.cb_compras_unidad);
+            this.tbp_compras.Controls.Add(this.tb_compras_cantcomprada);
             this.tbp_compras.Controls.Add(this.btn_altastock);
-            this.tbp_compras.Controls.Add(this.btn_borrar);
-            this.tbp_compras.Controls.Add(this.btn_agregar);
-            this.tbp_compras.Controls.Add(this.dataGridView1);
-            this.tbp_compras.Controls.Add(this.comboBox1);
+            this.tbp_compras.Controls.Add(this.bt_compras_borrarlista);
+            this.tbp_compras.Controls.Add(this.bt_compras_agregar);
+            this.tbp_compras.Controls.Add(this.dgv_compras_listacompra);
+            this.tbp_compras.Controls.Add(this.cb_compras_art);
             this.tbp_compras.Controls.Add(this.label6);
             this.tbp_compras.Controls.Add(this.label5);
             this.tbp_compras.Controls.Add(this.label4);
@@ -121,79 +126,75 @@
             this.tbp_compras.Text = "Compras";
             this.tbp_compras.UseVisualStyleBackColor = true;
             // 
-            // comboBox3
+            // bt_compras_daralta
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.bt_compras_daralta.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_compras_daralta.Image = global::Proyecto.Properties.Resources.alta32;
+            this.bt_compras_daralta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_compras_daralta.Location = new System.Drawing.Point(591, 481);
+            this.bt_compras_daralta.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.bt_compras_daralta.Name = "bt_compras_daralta";
+            this.bt_compras_daralta.Size = new System.Drawing.Size(171, 49);
+            this.bt_compras_daralta.TabIndex = 23;
+            this.bt_compras_daralta.Text = "  &Agregar a lista";
+            this.bt_compras_daralta.UseVisualStyleBackColor = true;
+            // 
+            // tb__compras_descompra
+            // 
+            this.tb__compras_descompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb__compras_descompra.Location = new System.Drawing.Point(172, 216);
+            this.tb__compras_descompra.Name = "tb__compras_descompra";
+            this.tb__compras_descompra.Size = new System.Drawing.Size(196, 23);
+            this.tb__compras_descompra.TabIndex = 21;
+            // 
+            // tb_compras_fechacompra
+            // 
+            this.tb_compras_fechacompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_compras_fechacompra.Location = new System.Drawing.Point(172, 176);
+            this.tb_compras_fechacompra.Name = "tb_compras_fechacompra";
+            this.tb_compras_fechacompra.Size = new System.Drawing.Size(148, 23);
+            this.tb_compras_fechacompra.TabIndex = 20;
+            // 
+            // tb_compras_pt
+            // 
+            this.tb_compras_pt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_compras_pt.Location = new System.Drawing.Point(172, 136);
+            this.tb_compras_pt.Name = "tb_compras_pt";
+            this.tb_compras_pt.Size = new System.Drawing.Size(76, 23);
+            this.tb_compras_pt.TabIndex = 19;
+            // 
+            // tb_compras_pxu
+            // 
+            this.tb_compras_pxu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_compras_pxu.Location = new System.Drawing.Point(172, 96);
+            this.tb_compras_pxu.Name = "tb_compras_pxu";
+            this.tb_compras_pxu.Size = new System.Drawing.Size(76, 23);
+            this.tb_compras_pxu.TabIndex = 18;
+            // 
+            // cb_compras_unidad
+            // 
+            this.cb_compras_unidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_compras_unidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_compras_unidad.FormattingEnabled = true;
+            this.cb_compras_unidad.Items.AddRange(new object[] {
             "Gramos",
             "Kilos",
             "Litros",
             "C.C.",
             "Unidad",
             "Otros"});
-            this.comboBox3.Location = new System.Drawing.Point(252, 96);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(116, 24);
-            this.comboBox3.TabIndex = 22;
+            this.cb_compras_unidad.Location = new System.Drawing.Point(252, 56);
+            this.cb_compras_unidad.Name = "cb_compras_unidad";
+            this.cb_compras_unidad.Size = new System.Drawing.Size(116, 24);
+            this.cb_compras_unidad.TabIndex = 17;
             // 
-            // textBox5
+            // tb_compras_cantcomprada
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(172, 216);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(196, 23);
-            this.textBox5.TabIndex = 21;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(172, 176);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(76, 23);
-            this.textBox4.TabIndex = 20;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(172, 136);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(76, 23);
-            this.textBox3.TabIndex = 19;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(172, 96);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(76, 23);
-            this.textBox2.TabIndex = 18;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Gramos",
-            "Kilos",
-            "Litros",
-            "C.C.",
-            "Unidad",
-            "Otros"});
-            this.comboBox2.Location = new System.Drawing.Point(252, 56);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(116, 24);
-            this.comboBox2.TabIndex = 17;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(172, 56);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(76, 23);
-            this.textBox1.TabIndex = 16;
+            this.tb_compras_cantcomprada.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_compras_cantcomprada.Location = new System.Drawing.Point(172, 56);
+            this.tb_compras_cantcomprada.Name = "tb_compras_cantcomprada";
+            this.tb_compras_cantcomprada.Size = new System.Drawing.Size(76, 23);
+            this.tb_compras_cantcomprada.TabIndex = 16;
             // 
             // btn_altastock
             // 
@@ -208,48 +209,86 @@
             this.btn_altastock.Text = "&Cargar";
             this.btn_altastock.UseVisualStyleBackColor = true;
             // 
-            // btn_borrar
+            // bt_compras_borrarlista
             // 
-            this.btn_borrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_borrar.Image = global::Proyecto.Properties.Resources.borrar32;
-            this.btn_borrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_borrar.Location = new System.Drawing.Point(592, 356);
-            this.btn_borrar.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.btn_borrar.Name = "btn_borrar";
-            this.btn_borrar.Size = new System.Drawing.Size(171, 49);
-            this.btn_borrar.TabIndex = 14;
-            this.btn_borrar.Text = "     &Borrar seleccion";
-            this.btn_borrar.UseVisualStyleBackColor = true;
+            this.bt_compras_borrarlista.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_compras_borrarlista.Image = global::Proyecto.Properties.Resources.borrar32;
+            this.bt_compras_borrarlista.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_compras_borrarlista.Location = new System.Drawing.Point(592, 356);
+            this.bt_compras_borrarlista.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.bt_compras_borrarlista.Name = "bt_compras_borrarlista";
+            this.bt_compras_borrarlista.Size = new System.Drawing.Size(171, 49);
+            this.bt_compras_borrarlista.TabIndex = 14;
+            this.bt_compras_borrarlista.Text = "     &Borrar seleccion";
+            this.bt_compras_borrarlista.UseVisualStyleBackColor = true;
             // 
-            // btn_agregar
+            // bt_compras_agregar
             // 
-            this.btn_agregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_agregar.Image = global::Proyecto.Properties.Resources.agregar32;
-            this.btn_agregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_agregar.Location = new System.Drawing.Point(592, 264);
-            this.btn_agregar.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.btn_agregar.Name = "btn_agregar";
-            this.btn_agregar.Size = new System.Drawing.Size(171, 49);
-            this.btn_agregar.TabIndex = 13;
-            this.btn_agregar.Text = "  &Agregar a lista";
-            this.btn_agregar.UseVisualStyleBackColor = true;
+            this.bt_compras_agregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_compras_agregar.Image = global::Proyecto.Properties.Resources.agregar32;
+            this.bt_compras_agregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_compras_agregar.Location = new System.Drawing.Point(592, 264);
+            this.bt_compras_agregar.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.bt_compras_agregar.Name = "bt_compras_agregar";
+            this.bt_compras_agregar.Size = new System.Drawing.Size(171, 49);
+            this.bt_compras_agregar.TabIndex = 13;
+            this.bt_compras_agregar.Text = "  &Agregar a lista";
+            this.bt_compras_agregar.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dgv_compras_listacompra
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 264);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(572, 356);
-            this.dataGridView1.TabIndex = 7;
+            this.dgv_compras_listacompra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_compras_listacompra.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Articulo,
+            this.Unidades,
+            this.Preciounitario,
+            this.Total,
+            this.Descripción});
+            this.dgv_compras_listacompra.Location = new System.Drawing.Point(12, 264);
+            this.dgv_compras_listacompra.Name = "dgv_compras_listacompra";
+            this.dgv_compras_listacompra.ReadOnly = true;
+            this.dgv_compras_listacompra.Size = new System.Drawing.Size(572, 356);
+            this.dgv_compras_listacompra.TabIndex = 7;
             // 
-            // comboBox1
+            // Articulo
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(172, 16);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(196, 24);
-            this.comboBox1.TabIndex = 6;
+            this.Articulo.HeaderText = "Articulo";
+            this.Articulo.Name = "Articulo";
+            this.Articulo.ReadOnly = true;
+            // 
+            // Unidades
+            // 
+            this.Unidades.HeaderText = "Unidades";
+            this.Unidades.Name = "Unidades";
+            this.Unidades.ReadOnly = true;
+            // 
+            // Preciounitario
+            // 
+            this.Preciounitario.HeaderText = "Precio Unitario";
+            this.Preciounitario.Name = "Preciounitario";
+            this.Preciounitario.ReadOnly = true;
+            // 
+            // Total
+            // 
+            this.Total.HeaderText = "Total";
+            this.Total.Name = "Total";
+            this.Total.ReadOnly = true;
+            // 
+            // Descripción
+            // 
+            this.Descripción.HeaderText = "Descripción";
+            this.Descripción.Name = "Descripción";
+            this.Descripción.ReadOnly = true;
+            // 
+            // cb_compras_art
+            // 
+            this.cb_compras_art.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_compras_art.FormattingEnabled = true;
+            this.cb_compras_art.Location = new System.Drawing.Point(172, 16);
+            this.cb_compras_art.Name = "cb_compras_art";
+            this.cb_compras_art.Size = new System.Drawing.Size(196, 24);
+            this.cb_compras_art.TabIndex = 6;
+            this.cb_compras_art.Enter += new System.EventHandler(this.cb_compras_art_Enter);
             // 
             // label6
             // 
@@ -459,11 +498,12 @@
             this.Name = "Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Principal";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Principal_FormClosed);
             this.Load += new System.EventHandler(this.Principal_Load);
             this.tbc_principal.ResumeLayout(false);
             this.tbp_compras.ResumeLayout(false);
             this.tbp_compras.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_compras_listacompra)).EndInit();
             this.spc_principal.Panel1.ResumeLayout(false);
             this.spc_principal.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.spc_principal)).EndInit();
@@ -491,19 +531,24 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_altastock;
-        private System.Windows.Forms.Button btn_borrar;
-        private System.Windows.Forms.Button btn_agregar;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Button bt_compras_borrarlista;
+        private System.Windows.Forms.Button bt_compras_agregar;
+        private System.Windows.Forms.DataGridView dgv_compras_listacompra;
+        private System.Windows.Forms.TextBox tb_compras_cantcomprada;
+        private System.Windows.Forms.TextBox tb__compras_descompra;
+        private System.Windows.Forms.TextBox tb_compras_fechacompra;
+        private System.Windows.Forms.TextBox tb_compras_pt;
+        private System.Windows.Forms.TextBox tb_compras_pxu;
+        private System.Windows.Forms.ComboBox cb_compras_unidad;
         private System.Windows.Forms.TabPage tbp_ventas;
         private System.Windows.Forms.SplitContainer spc_principal;
+        private System.Windows.Forms.ComboBox cb_compras_art;
+        private System.Windows.Forms.Button bt_compras_daralta;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Articulo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Unidades;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Preciounitario;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Total;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Descripción;
 
     }
 }

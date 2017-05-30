@@ -32,21 +32,21 @@
             this.btn_salir = new System.Windows.Forms.Button();
             this.dgv_registros = new System.Windows.Forms.DataGridView();
             this.gpb_filtrar = new System.Windows.Forms.GroupBox();
+            this.dtp_hasta = new System.Windows.Forms.DateTimePicker();
+            this.dtp_desde = new System.Windows.Forms.DateTimePicker();
             this.lbl_hasta = new System.Windows.Forms.Label();
             this.lbl_desde = new System.Windows.Forms.Label();
             this.gpb_buscar = new System.Windows.Forms.GroupBox();
+            this.cmb_dni = new System.Windows.Forms.ComboBox();
+            this.cmb_articulo = new System.Windows.Forms.ComboBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.chb_numerofactura = new System.Windows.Forms.CheckBox();
             this.chb_dni = new System.Windows.Forms.CheckBox();
             this.chb_articulo = new System.Windows.Forms.CheckBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.txb_telefono = new System.Windows.Forms.TextBox();
-            this.dtp_desde = new System.Windows.Forms.DateTimePicker();
-            this.dtp_hasta = new System.Windows.Forms.DateTimePicker();
             this.btn_buscar = new System.Windows.Forms.Button();
             this.btn_borrarcampos = new System.Windows.Forms.Button();
-            this.cmb_articulo = new System.Windows.Forms.ComboBox();
-            this.cmb_dni = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_registros)).BeginInit();
             this.gpb_filtrar.SuspendLayout();
             this.gpb_buscar.SuspendLayout();
@@ -88,6 +88,22 @@
             this.gpb_filtrar.TabStop = false;
             this.gpb_filtrar.Text = "Filtrar por fecha:";
             // 
+            // dtp_hasta
+            // 
+            this.dtp_hasta.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtp_hasta.Location = new System.Drawing.Point(76, 60);
+            this.dtp_hasta.Name = "dtp_hasta";
+            this.dtp_hasta.Size = new System.Drawing.Size(200, 24);
+            this.dtp_hasta.TabIndex = 11;
+            // 
+            // dtp_desde
+            // 
+            this.dtp_desde.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtp_desde.Location = new System.Drawing.Point(76, 24);
+            this.dtp_desde.Name = "dtp_desde";
+            this.dtp_desde.Size = new System.Drawing.Size(200, 24);
+            this.dtp_desde.TabIndex = 10;
+            // 
             // lbl_hasta
             // 
             this.lbl_hasta.AutoSize = true;
@@ -127,6 +143,24 @@
             this.gpb_buscar.TabIndex = 17;
             this.gpb_buscar.TabStop = false;
             this.gpb_buscar.Text = "Buscar registro por:";
+            // 
+            // cmb_dni
+            // 
+            this.cmb_dni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_dni.FormattingEnabled = true;
+            this.cmb_dni.Location = new System.Drawing.Point(136, 64);
+            this.cmb_dni.Name = "cmb_dni";
+            this.cmb_dni.Size = new System.Drawing.Size(148, 24);
+            this.cmb_dni.TabIndex = 13;
+            // 
+            // cmb_articulo
+            // 
+            this.cmb_articulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_articulo.FormattingEnabled = true;
+            this.cmb_articulo.Location = new System.Drawing.Point(136, 28);
+            this.cmb_articulo.Name = "cmb_articulo";
+            this.cmb_articulo.Size = new System.Drawing.Size(148, 24);
+            this.cmb_articulo.TabIndex = 12;
             // 
             // checkBox4
             // 
@@ -188,22 +222,6 @@
             this.txb_telefono.Size = new System.Drawing.Size(148, 23);
             this.txb_telefono.TabIndex = 5;
             // 
-            // dtp_desde
-            // 
-            this.dtp_desde.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtp_desde.Location = new System.Drawing.Point(76, 24);
-            this.dtp_desde.Name = "dtp_desde";
-            this.dtp_desde.Size = new System.Drawing.Size(200, 24);
-            this.dtp_desde.TabIndex = 10;
-            // 
-            // dtp_hasta
-            // 
-            this.dtp_hasta.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtp_hasta.Location = new System.Drawing.Point(76, 60);
-            this.dtp_hasta.Name = "dtp_hasta";
-            this.dtp_hasta.Size = new System.Drawing.Size(200, 24);
-            this.dtp_hasta.TabIndex = 11;
-            // 
             // btn_buscar
             // 
             this.btn_buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -230,24 +248,6 @@
             this.btn_borrarcampos.Text = "Borrar &campos";
             this.btn_borrarcampos.UseVisualStyleBackColor = true;
             // 
-            // cmb_articulo
-            // 
-            this.cmb_articulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_articulo.FormattingEnabled = true;
-            this.cmb_articulo.Location = new System.Drawing.Point(136, 28);
-            this.cmb_articulo.Name = "cmb_articulo";
-            this.cmb_articulo.Size = new System.Drawing.Size(148, 24);
-            this.cmb_articulo.TabIndex = 12;
-            // 
-            // cmb_dni
-            // 
-            this.cmb_dni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_dni.FormattingEnabled = true;
-            this.cmb_dni.Location = new System.Drawing.Point(136, 64);
-            this.cmb_dni.Name = "cmb_dni";
-            this.cmb_dni.Size = new System.Drawing.Size(148, 24);
-            this.cmb_dni.TabIndex = 13;
-            // 
             // Registros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -264,6 +264,7 @@
             this.Name = "Registros";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registros";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Registros_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_registros)).EndInit();
             this.gpb_filtrar.ResumeLayout(false);
             this.gpb_filtrar.PerformLayout();

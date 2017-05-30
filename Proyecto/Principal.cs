@@ -19,7 +19,7 @@ namespace Proyecto
         }
         private void Principal_Load(object sender, EventArgs e)
         {
-            
+            Articulos.cargar_articulos();
         }
 
         private void btn_salir_Click(object sender, EventArgs e)
@@ -60,6 +60,16 @@ namespace Proyecto
         private void btn_bajasmodif_Click(object sender, EventArgs e)
         {
             instancias.bajasmodif_crear_mostrar();
+        }
+
+        private void Principal_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
+
+        private void cb_compras_art_Enter(object sender, EventArgs e)
+        {
+            cb_compras_art.DataSource = datos.lista_articulos;
         }
 
     }

@@ -126,6 +126,31 @@ namespace Proyecto
             }
 
         }
+        public static void Cargar_Lista_string(List<String> l, string consulta, string campo)
+        {
+            try
+            {
+                ConexionDB.Open();
+                Orden = new SqlCommand(consulta, ConexionDB);
+                Lector = Orden.ExecuteReader();
+                while (Lector.Read())
+                {
+                    l.Add(Lector[campo].ToString());
+                }
+                Lector.Close();
+                ConexionDB.Close();
+            }
+            catch
+            {
+                if (ConexionDB.State == ConnectionState.Open)
+                {
+                    Lector.Close();
+                    ConexionDB.Close();
+                }
+                MessageBox.Show("Fallo la conexion con la base de datos");
+            }
+
+        }
         //Devuelve un valor unico de una consulta (EJ: select * from tabla where x=z,campo)
         public static string LeerDato(string campo, string OleDb)
         {

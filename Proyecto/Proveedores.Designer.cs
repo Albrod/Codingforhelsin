@@ -90,6 +90,7 @@
             this.Name = "Proveedores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Proveedores";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Proveedores_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

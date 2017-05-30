@@ -69,6 +69,7 @@
       <DependentUpon>BajasModif.cs</DependentUpon>
     </Compile>
     <Compile Include="Clases\Articulos.cs" />
+    <Compile Include="Clases\datos.cs" />
     <Compile Include="Clases\instancias_form.cs" />
     <Compile Include="Clientes.cs">
       <SubType>Form</SubType>
@@ -165,6 +166,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="imgicon\fondonuevo.jpg" />
+    <None Include="Properties\DataSources\datos.datasource" />
   </ItemGroup>
   <ItemGroup>
     <None Include="imgicon\archivos32.ico" />

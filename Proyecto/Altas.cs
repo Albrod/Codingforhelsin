@@ -23,6 +23,7 @@ namespace Proyecto
             gpb_datoscliente.BackColor = Color.FromArgb(16, 0, 0, 0);
             gpb_datosempleado.BackColor = Color.FromArgb(16, 0, 0, 0);
             gpb_proveedores.BackColor = Color.FromArgb(16, 0, 0, 0);
+        }
 
         private void chb_cliente_CheckedChanged(object sender, EventArgs e)
         {

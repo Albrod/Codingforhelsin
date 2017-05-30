@@ -20,5 +20,14 @@ namespace Proyecto
         {
             Close();
         }
+
+        private void Registros_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                this.Hide();
+                e.Cancel = true;
+            }
+        }
     }
 }
