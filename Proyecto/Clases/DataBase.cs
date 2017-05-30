@@ -11,7 +11,7 @@ namespace Proyecto
     public static class DataBase
     {
         //Declara variables y setea la conexion con la base de datos
-        static string strConexion = "Data Source=PAIN\\GDBD;" + "Initial Catalog=Comercio;" +
+        static string strConexion = "Data Source=" + datosconexion.server_name + ";" + "Initial Catalog=Comercio;" +
             "User id=usuario;" + "Password=malo;";
         static SqlConnection ConexionDB = new SqlConnection(strConexion);
         static SqlCommand Orden;

@@ -26,11 +26,15 @@ namespace Proyecto
 
         private void Ingreso_Load(object sender, EventArgs e)
         {
-
+            datosconexion.lista_conexiones.Add("SIEG\\GDBD");
+            datosconexion.lista_conexiones.Add("PAIN\\GDBD");
+            datosconexion.lista_conexiones.Add("LAUTA\\GDBD");
+            cb_ingreso_conec.DataSource = datosconexion.lista_conexiones;
         }
 
         private void btn_ingresar_Click(object sender, EventArgs e)
         {
+            datosconexion.crear_leer_config_bd();
             Principal principal = new Principal();
             principal.Tag = this;
             principal.Show();

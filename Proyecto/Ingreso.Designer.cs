@@ -35,6 +35,7 @@
             this.txb_contraseña = new System.Windows.Forms.TextBox();
             this.btn_ingresar = new System.Windows.Forms.Button();
             this.btn_salir = new System.Windows.Forms.Button();
+            this.cb_ingreso_conec = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lbl_usuario
@@ -101,12 +102,22 @@
             this.btn_salir.UseVisualStyleBackColor = true;
             this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click);
             // 
+            // cb_ingreso_conec
+            // 
+            this.cb_ingreso_conec.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_ingreso_conec.FormattingEnabled = true;
+            this.cb_ingreso_conec.Location = new System.Drawing.Point(192, 147);
+            this.cb_ingreso_conec.Name = "cb_ingreso_conec";
+            this.cb_ingreso_conec.Size = new System.Drawing.Size(121, 26);
+            this.cb_ingreso_conec.TabIndex = 6;
+            // 
             // Ingreso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Proyecto.Properties.Resources.fondonuevo1920x1080;
             this.ClientSize = new System.Drawing.Size(518, 187);
+            this.Controls.Add(this.cb_ingreso_conec);
             this.Controls.Add(this.btn_salir);
             this.Controls.Add(this.btn_ingresar);
             this.Controls.Add(this.txb_contraseña);
@@ -133,5 +144,6 @@
         private System.Windows.Forms.TextBox txb_contraseña;
         private System.Windows.Forms.Button btn_ingresar;
         private System.Windows.Forms.Button btn_salir;
+        private System.Windows.Forms.ComboBox cb_ingreso_conec;
     }
 }

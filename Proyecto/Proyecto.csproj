@@ -70,6 +70,7 @@
     </Compile>
     <Compile Include="Clases\Articulos.cs" />
     <Compile Include="Clases\datos.cs" />
+    <Compile Include="Clases\datosconexion.cs" />
     <Compile Include="Clases\instancias_form.cs" />
     <Compile Include="Clientes.cs">
       <SubType>Form</SubType>
