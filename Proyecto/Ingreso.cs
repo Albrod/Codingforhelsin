@@ -34,7 +34,7 @@ namespace Proyecto
 
         private void btn_ingresar_Click(object sender, EventArgs e)
         {
-            datosconexion.crear_leer_config_bd();
+            datosconexion.crear_leer_config_bd(cb_ingreso_conec.Text);
             Principal principal = new Principal();
             principal.Tag = this;
             principal.Show();

@@ -10,7 +10,7 @@ namespace Proyecto
     {
         public static string server_name = "";
         public static List<string> lista_conexiones = new List<string>();        
-        public static void crear_leer_config_bd()
+        public static void crear_leer_config_bd(string text_combo)
         {
             if (File.Exists("cfg.ini"))
             {
@@ -30,9 +30,9 @@ namespace Proyecto
             else
             {
                 StreamWriter sw = new StreamWriter("cfg.ini", true);
-                sw.WriteLine("server_name=" + lista_conexiones[0].ToString());
+                sw.WriteLine("server_name=" + text_combo);
                 sw.Close();
-                server_name =lista_conexiones[0].ToString();
+                server_name = text_combo;
             }
         }
     }

@@ -119,26 +119,26 @@
             this.rdb_proveedorexistente = new System.Windows.Forms.RadioButton();
             this.rdb_proveedornuevo = new System.Windows.Forms.RadioButton();
             this.tbp_articulos = new System.Windows.Forms.TabPage();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.gb_altas = new System.Windows.Forms.GroupBox();
-            this.gb_articulos_alta = new System.Windows.Forms.GroupBox();
-            this.cb_articulos_unidad = new System.Windows.Forms.ComboBox();
-            this.tb_articulos_descart = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.tb_articulos_nombre = new System.Windows.Forms.TextBox();
-            this.tb_articulos_stockminimo = new System.Windows.Forms.TextBox();
-            this.tb_articulos_ganancia = new System.Windows.Forms.TextBox();
+            this.bt_articulos_altaart = new System.Windows.Forms.Button();
+            this.gb_articulos_provagregar = new System.Windows.Forms.GroupBox();
+            this.bt_articulos_agregarprov = new System.Windows.Forms.Button();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.label16 = new System.Windows.Forms.Label();
             this.gb_articulos_provmostrar = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.gb_articulos_provagregar = new System.Windows.Forms.GroupBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.bt_articulos_altaart = new System.Windows.Forms.Button();
-            this.bt_articulos_agregarprov = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.gb_articulos_alta = new System.Windows.Forms.GroupBox();
+            this.tb_articulos_ganancia = new System.Windows.Forms.TextBox();
+            this.tb_articulos_stockminimo = new System.Windows.Forms.TextBox();
+            this.tb_articulos_nombre = new System.Windows.Forms.TextBox();
+            this.tb_articulos_descart = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.cb_articulos_unidad = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.gb_altas = new System.Windows.Forms.GroupBox();
             this.tbc_altas.SuspendLayout();
             this.tbp_personas.SuspendLayout();
             this.gpb_datosempleado.SuspendLayout();
@@ -151,24 +151,24 @@
             this.gpb_proveedorpersona.SuspendLayout();
             this.gpb_proveedores.SuspendLayout();
             this.tbp_articulos.SuspendLayout();
-            this.gb_altas.SuspendLayout();
-            this.gb_articulos_alta.SuspendLayout();
-            this.gb_articulos_provmostrar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.gb_articulos_provagregar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.gb_articulos_provmostrar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.gb_articulos_alta.SuspendLayout();
+            this.gb_altas.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_salir
             // 
-            this.btn_salir.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.btn_salir.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.btn_salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_salir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_salir.Location = new System.Drawing.Point(8, 682);
             this.btn_salir.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btn_salir.Name = "btn_salir";
-            this.btn_salir.Size = new System.Drawing.Size(171, 49);
+            this.btn_salir.Size = new System.Drawing.Size(171, 0);
             this.btn_salir.TabIndex = 12;
             this.btn_salir.Text = "&Cerrar";
             this.btn_salir.UseVisualStyleBackColor = true;
@@ -176,8 +176,8 @@
             // 
             // tbc_altas
             // 
-            this.tbc_altas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.tbc_altas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.tbc_altas.Controls.Add(this.tbp_personas);
             this.tbc_altas.Controls.Add(this.tbp_proveedores);
             this.tbc_altas.Controls.Add(this.tbp_articulos);
@@ -185,7 +185,7 @@
             this.tbc_altas.Location = new System.Drawing.Point(0, 0);
             this.tbc_altas.Name = "tbc_altas";
             this.tbc_altas.SelectedIndex = 0;
-            this.tbc_altas.Size = new System.Drawing.Size(1006, 674);
+            this.tbc_altas.Size = new System.Drawing.Size(1006, 515);
             this.tbc_altas.TabIndex = 13;
             // 
             // tbp_personas
@@ -200,7 +200,7 @@
             this.tbp_personas.Location = new System.Drawing.Point(4, 27);
             this.tbp_personas.Name = "tbp_personas";
             this.tbp_personas.Padding = new System.Windows.Forms.Padding(3);
-            this.tbp_personas.Size = new System.Drawing.Size(998, 643);
+            this.tbp_personas.Size = new System.Drawing.Size(998, 484);
             this.tbp_personas.TabIndex = 0;
             this.tbp_personas.Text = "Personas";
             // 
@@ -1150,9 +1150,9 @@
             // 
             // gpb_proveedores
             // 
-            this.gpb_proveedores.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.gpb_proveedores.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gpb_proveedores.BackColor = System.Drawing.Color.Transparent;
             this.gpb_proveedores.Controls.Add(this.rdb_proveedorexistente);
             this.gpb_proveedores.Controls.Add(this.rdb_proveedornuevo);
@@ -1206,145 +1206,58 @@
             this.tbp_articulos.TabIndex = 2;
             this.tbp_articulos.Text = "Artículos";
             // 
-            // label14
+            // bt_articulos_altaart
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(6, 56);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(84, 18);
-            this.label14.TabIndex = 4;
-            this.label14.Text = "Tipo unidad";
+            this.bt_articulos_altaart.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_articulos_altaart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_articulos_altaart.Location = new System.Drawing.Point(806, 581);
+            this.bt_articulos_altaart.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.bt_articulos_altaart.Name = "bt_articulos_altaart";
+            this.bt_articulos_altaart.Size = new System.Drawing.Size(184, 49);
+            this.bt_articulos_altaart.TabIndex = 36;
+            this.bt_articulos_altaart.Text = "&Dar de alta";
+            this.bt_articulos_altaart.UseVisualStyleBackColor = true;
             // 
-            // label11
+            // gb_articulos_provagregar
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(6, 122);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(170, 18);
-            this.label11.TabIndex = 3;
-            this.label11.Text = "Porcentaje de ganancia?";
+            this.gb_articulos_provagregar.Controls.Add(this.bt_articulos_agregarprov);
+            this.gb_articulos_provagregar.Controls.Add(this.dataGridView2);
+            this.gb_articulos_provagregar.Controls.Add(this.label16);
+            this.gb_articulos_provagregar.Location = new System.Drawing.Point(7, 377);
+            this.gb_articulos_provagregar.Name = "gb_articulos_provagregar";
+            this.gb_articulos_provagregar.Size = new System.Drawing.Size(794, 260);
+            this.gb_articulos_provagregar.TabIndex = 7;
+            this.gb_articulos_provagregar.TabStop = false;
+            this.gb_articulos_provagregar.Text = "groupBox4";
             // 
-            // label10
+            // bt_articulos_agregarprov
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(6, 20);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(256, 18);
-            this.label10.TabIndex = 2;
-            this.label10.Text = "Proveedores que venden este articulo";
+            this.bt_articulos_agregarprov.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_articulos_agregarprov.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_articulos_agregarprov.Location = new System.Drawing.Point(602, 204);
+            this.bt_articulos_agregarprov.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.bt_articulos_agregarprov.Name = "bt_articulos_agregarprov";
+            this.bt_articulos_agregarprov.Size = new System.Drawing.Size(184, 49);
+            this.bt_articulos_agregarprov.TabIndex = 36;
+            this.bt_articulos_agregarprov.Text = "&Agregar";
+            this.bt_articulos_agregarprov.UseVisualStyleBackColor = true;
             // 
-            // label6
+            // dataGridView2
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 20);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(114, 18);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Nombre articulo";
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(6, 41);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(576, 219);
+            this.dataGridView2.TabIndex = 4;
             // 
-            // label4
+            // label16
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 91);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 18);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Stock minimo";
-            // 
-            // gb_altas
-            // 
-            this.gb_altas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.gb_altas.BackColor = System.Drawing.Color.Transparent;
-            this.gb_altas.Controls.Add(this.btn_salir);
-            this.gb_altas.Controls.Add(this.tbc_altas);
-            this.gb_altas.Location = new System.Drawing.Point(2, 2);
-            this.gb_altas.Name = "gb_altas";
-            this.gb_altas.Size = new System.Drawing.Size(1012, 738);
-            this.gb_altas.TabIndex = 14;
-            this.gb_altas.TabStop = false;
-            // 
-            // gb_articulos_alta
-            // 
-            this.gb_articulos_alta.Controls.Add(this.tb_articulos_ganancia);
-            this.gb_articulos_alta.Controls.Add(this.tb_articulos_stockminimo);
-            this.gb_articulos_alta.Controls.Add(this.tb_articulos_nombre);
-            this.gb_articulos_alta.Controls.Add(this.tb_articulos_descart);
-            this.gb_articulos_alta.Controls.Add(this.label15);
-            this.gb_articulos_alta.Controls.Add(this.cb_articulos_unidad);
-            this.gb_articulos_alta.Controls.Add(this.label6);
-            this.gb_articulos_alta.Controls.Add(this.label11);
-            this.gb_articulos_alta.Controls.Add(this.label14);
-            this.gb_articulos_alta.Controls.Add(this.label4);
-            this.gb_articulos_alta.Location = new System.Drawing.Point(7, 7);
-            this.gb_articulos_alta.Name = "gb_articulos_alta";
-            this.gb_articulos_alta.Size = new System.Drawing.Size(403, 364);
-            this.gb_articulos_alta.TabIndex = 5;
-            this.gb_articulos_alta.TabStop = false;
-            this.gb_articulos_alta.Text = "Alta";
-            // 
-            // cb_articulos_unidad
-            // 
-            this.cb_articulos_unidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cb_articulos_unidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_articulos_unidad.FormattingEnabled = true;
-            this.cb_articulos_unidad.Items.AddRange(new object[] {
-            "Gramos",
-            "Kilos",
-            "Litros",
-            "C.C.",
-            "Unidad",
-            "Otros"});
-            this.cb_articulos_unidad.Location = new System.Drawing.Point(175, 55);
-            this.cb_articulos_unidad.Name = "cb_articulos_unidad";
-            this.cb_articulos_unidad.Size = new System.Drawing.Size(116, 24);
-            this.cb_articulos_unidad.TabIndex = 18;
-            // 
-            // tb_articulos_descart
-            // 
-            this.tb_articulos_descart.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_articulos_descart.Location = new System.Drawing.Point(98, 150);
-            this.tb_articulos_descart.Name = "tb_articulos_descart";
-            this.tb_articulos_descart.Size = new System.Drawing.Size(193, 23);
-            this.tb_articulos_descart.TabIndex = 23;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(6, 153);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(86, 17);
-            this.label15.TabIndex = 22;
-            this.label15.Text = "Descripción:";
-            // 
-            // tb_articulos_nombre
-            // 
-            this.tb_articulos_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_articulos_nombre.Location = new System.Drawing.Point(126, 19);
-            this.tb_articulos_nombre.MaxLength = 40;
-            this.tb_articulos_nombre.Name = "tb_articulos_nombre";
-            this.tb_articulos_nombre.Size = new System.Drawing.Size(165, 23);
-            this.tb_articulos_nombre.TabIndex = 24;
-            // 
-            // tb_articulos_stockminimo
-            // 
-            this.tb_articulos_stockminimo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_articulos_stockminimo.Location = new System.Drawing.Point(175, 90);
-            this.tb_articulos_stockminimo.MaxLength = 40;
-            this.tb_articulos_stockminimo.Name = "tb_articulos_stockminimo";
-            this.tb_articulos_stockminimo.Size = new System.Drawing.Size(116, 23);
-            this.tb_articulos_stockminimo.TabIndex = 25;
-            // 
-            // tb_articulos_ganancia
-            // 
-            this.tb_articulos_ganancia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_articulos_ganancia.Location = new System.Drawing.Point(175, 121);
-            this.tb_articulos_ganancia.MaxLength = 40;
-            this.tb_articulos_ganancia.Name = "tb_articulos_ganancia";
-            this.tb_articulos_ganancia.Size = new System.Drawing.Size(116, 23);
-            this.tb_articulos_ganancia.TabIndex = 26;
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(6, 20);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(336, 18);
+            this.label16.TabIndex = 3;
+            this.label16.Text = "Seleccione un proveedor de la lista para agregarlo";
             // 
             // gb_articulos_provmostrar
             // 
@@ -1365,65 +1278,152 @@
             this.dataGridView1.Size = new System.Drawing.Size(562, 311);
             this.dataGridView1.TabIndex = 3;
             // 
-            // gb_articulos_provagregar
+            // label10
             // 
-            this.gb_articulos_provagregar.Controls.Add(this.bt_articulos_agregarprov);
-            this.gb_articulos_provagregar.Controls.Add(this.dataGridView2);
-            this.gb_articulos_provagregar.Controls.Add(this.label16);
-            this.gb_articulos_provagregar.Location = new System.Drawing.Point(7, 377);
-            this.gb_articulos_provagregar.Name = "gb_articulos_provagregar";
-            this.gb_articulos_provagregar.Size = new System.Drawing.Size(794, 260);
-            this.gb_articulos_provagregar.TabIndex = 7;
-            this.gb_articulos_provagregar.TabStop = false;
-            this.gb_articulos_provagregar.Text = "groupBox4";
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(6, 20);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(256, 18);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "Proveedores que venden este articulo";
             // 
-            // label16
+            // gb_articulos_alta
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(6, 20);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(336, 18);
-            this.label16.TabIndex = 3;
-            this.label16.Text = "Seleccione un proveedor de la lista para agregarlo";
+            this.gb_articulos_alta.Controls.Add(this.tb_articulos_ganancia);
+            this.gb_articulos_alta.Controls.Add(this.tb_articulos_stockminimo);
+            this.gb_articulos_alta.Controls.Add(this.tb_articulos_nombre);
+            this.gb_articulos_alta.Controls.Add(this.tb_articulos_descart);
+            this.gb_articulos_alta.Controls.Add(this.label15);
+            this.gb_articulos_alta.Controls.Add(this.cb_articulos_unidad);
+            this.gb_articulos_alta.Controls.Add(this.label6);
+            this.gb_articulos_alta.Controls.Add(this.label11);
+            this.gb_articulos_alta.Controls.Add(this.label14);
+            this.gb_articulos_alta.Controls.Add(this.label4);
+            this.gb_articulos_alta.Location = new System.Drawing.Point(7, 7);
+            this.gb_articulos_alta.Name = "gb_articulos_alta";
+            this.gb_articulos_alta.Size = new System.Drawing.Size(403, 364);
+            this.gb_articulos_alta.TabIndex = 5;
+            this.gb_articulos_alta.TabStop = false;
+            this.gb_articulos_alta.Text = "Alta";
             // 
-            // dataGridView2
+            // tb_articulos_ganancia
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(6, 41);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(576, 219);
-            this.dataGridView2.TabIndex = 4;
+            this.tb_articulos_ganancia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_articulos_ganancia.Location = new System.Drawing.Point(175, 121);
+            this.tb_articulos_ganancia.MaxLength = 40;
+            this.tb_articulos_ganancia.Name = "tb_articulos_ganancia";
+            this.tb_articulos_ganancia.Size = new System.Drawing.Size(116, 23);
+            this.tb_articulos_ganancia.TabIndex = 26;
             // 
-            // bt_articulos_altaart
+            // tb_articulos_stockminimo
             // 
-            this.bt_articulos_altaart.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_articulos_altaart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_articulos_altaart.Location = new System.Drawing.Point(806, 581);
-            this.bt_articulos_altaart.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.bt_articulos_altaart.Name = "bt_articulos_altaart";
-            this.bt_articulos_altaart.Size = new System.Drawing.Size(184, 49);
-            this.bt_articulos_altaart.TabIndex = 36;
-            this.bt_articulos_altaart.Text = "&Dar de alta";
-            this.bt_articulos_altaart.UseVisualStyleBackColor = true;
+            this.tb_articulos_stockminimo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_articulos_stockminimo.Location = new System.Drawing.Point(175, 90);
+            this.tb_articulos_stockminimo.MaxLength = 40;
+            this.tb_articulos_stockminimo.Name = "tb_articulos_stockminimo";
+            this.tb_articulos_stockminimo.Size = new System.Drawing.Size(116, 23);
+            this.tb_articulos_stockminimo.TabIndex = 25;
             // 
-            // bt_articulos_agregarprov
+            // tb_articulos_nombre
             // 
-            this.bt_articulos_agregarprov.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_articulos_agregarprov.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_articulos_agregarprov.Location = new System.Drawing.Point(602, 204);
-            this.bt_articulos_agregarprov.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.bt_articulos_agregarprov.Name = "bt_articulos_agregarprov";
-            this.bt_articulos_agregarprov.Size = new System.Drawing.Size(184, 49);
-            this.bt_articulos_agregarprov.TabIndex = 36;
-            this.bt_articulos_agregarprov.Text = "&Agregar";
-            this.bt_articulos_agregarprov.UseVisualStyleBackColor = true;
+            this.tb_articulos_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_articulos_nombre.Location = new System.Drawing.Point(126, 19);
+            this.tb_articulos_nombre.MaxLength = 40;
+            this.tb_articulos_nombre.Name = "tb_articulos_nombre";
+            this.tb_articulos_nombre.Size = new System.Drawing.Size(165, 23);
+            this.tb_articulos_nombre.TabIndex = 24;
+            // 
+            // tb_articulos_descart
+            // 
+            this.tb_articulos_descart.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_articulos_descart.Location = new System.Drawing.Point(98, 150);
+            this.tb_articulos_descart.Name = "tb_articulos_descart";
+            this.tb_articulos_descart.Size = new System.Drawing.Size(193, 23);
+            this.tb_articulos_descart.TabIndex = 23;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(6, 153);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(86, 17);
+            this.label15.TabIndex = 22;
+            this.label15.Text = "Descripción:";
+            // 
+            // cb_articulos_unidad
+            // 
+            this.cb_articulos_unidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_articulos_unidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_articulos_unidad.FormattingEnabled = true;
+            this.cb_articulos_unidad.Items.AddRange(new object[] {
+            "Gramos",
+            "Kilos",
+            "Litros",
+            "C.C.",
+            "Unidad",
+            "Otros"});
+            this.cb_articulos_unidad.Location = new System.Drawing.Point(175, 55);
+            this.cb_articulos_unidad.Name = "cb_articulos_unidad";
+            this.cb_articulos_unidad.Size = new System.Drawing.Size(116, 24);
+            this.cb_articulos_unidad.TabIndex = 18;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 20);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(114, 18);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Nombre articulo";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(6, 122);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(170, 18);
+            this.label11.TabIndex = 3;
+            this.label11.Text = "Porcentaje de ganancia?";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(6, 56);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(84, 18);
+            this.label14.TabIndex = 4;
+            this.label14.Text = "Tipo unidad";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 91);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(100, 18);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Stock minimo";
+            // 
+            // gb_altas
+            // 
+            this.gb_altas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gb_altas.BackColor = System.Drawing.Color.Transparent;
+            this.gb_altas.Controls.Add(this.btn_salir);
+            this.gb_altas.Controls.Add(this.tbc_altas);
+            this.gb_altas.Location = new System.Drawing.Point(2, 2);
+            this.gb_altas.Name = "gb_altas";
+            this.gb_altas.Size = new System.Drawing.Size(1012, 579);
+            this.gb_altas.TabIndex = 14;
+            this.gb_altas.TabStop = false;
             // 
             // Altas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1008, 741);
+            this.ClientSize = new System.Drawing.Size(1008, 582);
             this.Controls.Add(this.gb_altas);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -1452,15 +1452,15 @@
             this.gpb_proveedores.ResumeLayout(false);
             this.gpb_proveedores.PerformLayout();
             this.tbp_articulos.ResumeLayout(false);
-            this.gb_altas.ResumeLayout(false);
-            this.gb_articulos_alta.ResumeLayout(false);
-            this.gb_articulos_alta.PerformLayout();
-            this.gb_articulos_provmostrar.ResumeLayout(false);
-            this.gb_articulos_provmostrar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.gb_articulos_provagregar.ResumeLayout(false);
             this.gb_articulos_provagregar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.gb_articulos_provmostrar.ResumeLayout(false);
+            this.gb_articulos_provmostrar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.gb_articulos_alta.ResumeLayout(false);
+            this.gb_articulos_alta.PerformLayout();
+            this.gb_altas.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
