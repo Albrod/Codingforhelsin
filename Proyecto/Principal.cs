@@ -69,7 +69,7 @@ namespace Proyecto
 
         private void cb_compras_art_Enter(object sender, EventArgs e)
         {
-            cb_compras_art.DataSource = datos.lista_articulos;
+        //    cb_compras_art.DataSource = datos.lista_articulos;
         }
 
     }

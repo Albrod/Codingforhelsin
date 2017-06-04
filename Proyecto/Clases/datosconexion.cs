@@ -30,7 +30,10 @@ namespace Proyecto
             else
             {
                 StreamWriter sw = new StreamWriter("cfg.ini", true);
-                sw.WriteLine("server_name=" + text_combo);
+                if (text_combo != "")
+                {
+                    sw.WriteLine("server_name=" + text_combo);
+                }
                 sw.Close();
                 server_name = text_combo;
             }

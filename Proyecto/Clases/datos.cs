@@ -7,6 +7,8 @@ namespace Proyecto
 {
     public static class datos
     {
+        #region articulos
         public static List<string> lista_articulos = new List<string>();
+        #endregion
     }
 }
