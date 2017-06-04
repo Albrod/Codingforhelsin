@@ -34,6 +34,10 @@ namespace Proyecto
                 {
                     sw.WriteLine("server_name=" + text_combo);
                 }
+                else
+                {
+                    sw.WriteLine("server_name=Sieg\\GDBD");
+                }
                 sw.Close();
                 server_name = text_combo;
             }
