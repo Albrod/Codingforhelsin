@@ -168,7 +168,7 @@
             this.btn_salir.Location = new System.Drawing.Point(8, 682);
             this.btn_salir.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btn_salir.Name = "btn_salir";
-            this.btn_salir.Size = new System.Drawing.Size(171, 0);
+            this.btn_salir.Size = new System.Drawing.Size(171, 52);
             this.btn_salir.TabIndex = 12;
             this.btn_salir.Text = "&Cerrar";
             this.btn_salir.UseVisualStyleBackColor = true;
@@ -185,7 +185,7 @@
             this.tbc_altas.Location = new System.Drawing.Point(0, 0);
             this.tbc_altas.Name = "tbc_altas";
             this.tbc_altas.SelectedIndex = 0;
-            this.tbc_altas.Size = new System.Drawing.Size(1006, 515);
+            this.tbc_altas.Size = new System.Drawing.Size(1006, 567);
             this.tbc_altas.TabIndex = 13;
             // 
             // tbp_personas
@@ -200,7 +200,7 @@
             this.tbp_personas.Location = new System.Drawing.Point(4, 27);
             this.tbp_personas.Name = "tbp_personas";
             this.tbp_personas.Padding = new System.Windows.Forms.Padding(3);
-            this.tbp_personas.Size = new System.Drawing.Size(998, 484);
+            this.tbp_personas.Size = new System.Drawing.Size(998, 536);
             this.tbp_personas.TabIndex = 0;
             this.tbp_personas.Text = "Personas";
             // 
@@ -215,6 +215,7 @@
             this.btn_daralta.TabIndex = 15;
             this.btn_daralta.Text = "&Dar de alta";
             this.btn_daralta.UseVisualStyleBackColor = true;
+            this.btn_daralta.Click += new System.EventHandler(this.btn_daralta_Click);
             // 
             // btn_borrarcampos
             // 
@@ -685,7 +686,7 @@
             this.tbp_proveedores.Location = new System.Drawing.Point(4, 27);
             this.tbp_proveedores.Name = "tbp_proveedores";
             this.tbp_proveedores.Padding = new System.Windows.Forms.Padding(3);
-            this.tbp_proveedores.Size = new System.Drawing.Size(998, 643);
+            this.tbp_proveedores.Size = new System.Drawing.Size(998, 484);
             this.tbp_proveedores.TabIndex = 1;
             this.tbp_proveedores.Text = "Proveedores";
             this.tbp_proveedores.UseVisualStyleBackColor = true;
@@ -1202,7 +1203,7 @@
             this.tbp_articulos.Location = new System.Drawing.Point(4, 27);
             this.tbp_articulos.Name = "tbp_articulos";
             this.tbp_articulos.Padding = new System.Windows.Forms.Padding(3);
-            this.tbp_articulos.Size = new System.Drawing.Size(998, 643);
+            this.tbp_articulos.Size = new System.Drawing.Size(998, 484);
             this.tbp_articulos.TabIndex = 2;
             this.tbp_articulos.Text = "Artículos";
             // 
@@ -1414,7 +1415,7 @@
             this.gb_altas.Controls.Add(this.tbc_altas);
             this.gb_altas.Location = new System.Drawing.Point(2, 2);
             this.gb_altas.Name = "gb_altas";
-            this.gb_altas.Size = new System.Drawing.Size(1012, 579);
+            this.gb_altas.Size = new System.Drawing.Size(1357, 631);
             this.gb_altas.TabIndex = 14;
             this.gb_altas.TabStop = false;
             // 
@@ -1423,7 +1424,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1008, 582);
+            this.ClientSize = new System.Drawing.Size(1353, 634);
             this.Controls.Add(this.gb_altas);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

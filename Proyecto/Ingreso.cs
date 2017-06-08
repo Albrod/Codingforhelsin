@@ -28,7 +28,7 @@ namespace Proyecto
         {
             datosconexion.lista_conexiones.Add("SIEG\\GDBD");
             datosconexion.lista_conexiones.Add("PAIN\\GDBD");
-            datosconexion.lista_conexiones.Add(".\\SQLEXPRESS");
+            datosconexion.lista_conexiones.Add("LAUTTA17\\SQLEXPRESS");
             cb_ingreso_conec.DataSource = datosconexion.lista_conexiones;
         }
 

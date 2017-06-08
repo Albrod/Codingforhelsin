@@ -47,11 +47,11 @@ namespace Proyecto
                 Orden.ExecuteNonQuery();
                 ConexionDB.Close();
             }
-            catch 
+            catch (Exception e)
             {
                 if (ConexionDB.State == ConnectionState.Open)
                     ConexionDB.Close();
-                MessageBox.Show("Fallo la conexion con la base de datos");
+                MessageBox.Show(Convert.ToString(e));
             }
         }
 

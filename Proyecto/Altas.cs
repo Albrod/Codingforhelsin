@@ -89,5 +89,13 @@ namespace Proyecto
                 e.Cancel = true;
             }
         }
+
+        private void btn_daralta_Click(object sender, EventArgs e)
+        {
+            if ((txb_personanombres.TextLength > 2) && (txb_personaapellidos.TextLength > 2) && (txb_personadni.TextLength > 6))
+                Personas.ingresarpersonas(txb_personanombres.Text, txb_personaapellidos.Text, txb_personadni.Text, txb_personadireccion.Text, txb_personadescripcion.Text);
+            //, Convert.ToInt32(txb_personatelefono1.Text), Convert.ToInt32(txb_personatelefono2.Text), Convert.ToInt32(txb_personatelefono3.Text), txb_proveedordescripcion1.Text, txb_proveedordescripcion2.Text, txb_proveedordescripcion3.Text)
+
+        }
     }
 }
