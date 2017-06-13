@@ -56,7 +56,7 @@ CREATE TABLE [Cliente] (
 [id_cliente] INT IDENTITY (1,1) NOT NULL PRIMARY KEY,
 [id_persona] INT UNIQUE,
 [cuit] NVARCHAR(40),
-[condicion IVA] NVARCHAR(40),
+[condicion IVA] NVARCHAR(40), /*CONS FINAL Y MONOTRIBUTISTA (FACTURA B), RESPONSABLE INSCRIPTO (FACTURA A)*/
 [estado] NVARCHAR(40) DEFAULT 'Activo'
 );
 
@@ -72,7 +72,8 @@ CREATE TABLE [Facturacion] (
 [cod_factura] NVARCHAR(40),
 [id_cliente] INTEGER,
 [id_articulo] INTEGER,
-[tipo iva] NVARCHAR(40),
+[tipo iva] NVARCHAR(40), /*Discriminado (FACTURA A), no discriminado o exento (FACTURA B)*/
+[iva] INT,  
 [tipo factura] NVARCHAR(40),
 [descripcion] NVARCHAR(100) DEFAULT 'Sin Descripcion',
 );
@@ -122,10 +123,9 @@ CREATE TABLE [Rubro] (
 CREATE TABLE [Stock] (
 [id_stock] INT NOT NULL UNIQUE,
 [cantidad] INT,
-[precio] INT,
+[precio] SMALLMONEY,
 [total] INT,
 [stock minimo] INT,
-[iva] INT,
 [ganancia] INT,
 [estado] NVARCHAR(40) DEFAULT 'Activo'
 );
@@ -186,22 +186,16 @@ ALTER TABLE [Telefonos] ADD CONSTRAINT [PersonasTelefonos] FOREIGN KEY (id_perso
 ALTER TABLE [Usuarios] ADD CONSTRAINT [EmpleadosUsuarios] FOREIGN KEY (id_empleado) REFERENCES [Empleados] (id_empleado);
 GO
 
-/*Restrains*/
-GO
-
-/*Triggers*/
-GO
-
-/*Stored procedure*/
-GO
-
-/*Views*/
-CREATE VIEW [Personas_Clientes] AS 
-SELECT Cliente.id_cliente, Personas.id_persona, Personas.nombre, Personas.apellido, Personas.dni, Cliente.cuit, Cliente.[condicion IVA], Personas.direccion, Personas.descripcion, Cliente.estado
-FROM Personas INNER JOIN Cliente ON Personas.id_persona = Cliente.id_persona;
-GO
-
-select * From [Personas_Clientes]
-
-/*Funciones*/
+/*Restricciones*/
+ALTER TABLE Cliente ADD UNIQUE(cuit)
+ALTER TABLE Proveedor ADD UNIQUE(cuit)
+ALTER TABLE Empleados ADD UNIQUE(cuil)
+ALTER TABLE Telefonos ADD UNIQUE([numero de telefono])
+ALTER TABLE Stock ADD CONSTRAINT stock_precio_mayor0 CHECK (precio >=0)
+ALTER TABLE Stock ADD CONSTRAINT stock_total_mayor0 CHECK (total >=0)
+ALTER TABLE Stock ADD CONSTRAINT stock_ganancia_mayor0 CHECK (ganancia >=0)
+ALTER TABLE Facturacion ADD CONSTRAINT facturacion_iva_mayor0 CHECK (iva >=0)
+ALTER TABLE [Ficha de transaccion] ADD CONSTRAINT ficha_cantidad_mayor0 CHECK (cantidad >=0)
+ALTER TABLE [Ficha de transaccion] ADD CONSTRAINT ficha_total_mayor0 CHECK (total >=0)
+ALTER TABLE [Ficha de transaccion] ADD CONSTRAINT ficha_preciox_mayor0 CHECK ([precio x unidad] >=0)
 GO
